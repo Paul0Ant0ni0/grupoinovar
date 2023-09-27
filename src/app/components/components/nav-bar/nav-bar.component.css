@@ -1,0 +1,93 @@
+/* Estilos para telas grandes (por exemplo, desktop) */
+header {
+    width: 100%;
+    height: 15%;
+  }
+
+  .container-contato{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .header-top {
+    background-color: var(--azul);
+    color: white;
+    height: 52px;
+    padding: 0 15px;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header-main {
+    height: 55%;
+    padding: 0 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .container-link {
+    width: 45%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .container-link a {
+    color: rgb(112, 112, 112);
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .container-link a:hover,
+  .container-link a:active {
+    color: var(--azul);
+  }
+  
+  .container-link .btn-orcamento {
+    border: 3px solid var(--azul);
+    border-radius: 50px;
+    padding: 7px 25px;
+  }
+  
+  .container-link .btn-orcamento:hover {
+    background-color: var(--azul);
+    color: white;
+    transition: 0.8s;
+  }
+  
+  /* Estilos para telas menores (por exemplo, dispositivos móveis) */
+  @media (max-width: 768px) {
+    header {
+      height: auto;
+    }
+  
+    .header-top {
+      height: auto;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 15px;
+    }
+  
+    .header-main {
+      flex-direction: column;
+      padding: 15px;
+    }
+  
+    .container-link {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .container-link a {
+      margin-bottom: 10px;
+    }
+  }
+  

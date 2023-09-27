@@ -1,0 +1,24 @@
+.servicos-icones {
+    height: 35%;
+    background-color: var(--cinza);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    
+}
+
+
+.servicos-icones div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 12.5%;
+    height: 50%;
+    margin: 10px;
+    color: var(--azul);
+
+
+}
+
