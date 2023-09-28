@@ -62,9 +62,10 @@
 
 .double-width:nth-child(1){
     background-color: white;
-    width: 40%;
+    width: clamp(180px, 68%, 350px);
     padding: 15px;
     border-radius: 10px;
+    margin-bottom: 15px;
 }
 
 .double-width .texto-apresentacao{

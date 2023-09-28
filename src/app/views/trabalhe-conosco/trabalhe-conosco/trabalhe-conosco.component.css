@@ -1,0 +1,50 @@
+main {
+    text-align: center;
+}
+
+
+.capa {
+    height: 25rem;
+    background-image: url('../../../../assets/images/bg-superior.svg');
+    background-position: center;
+
+}
+
+.capa, span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+span {
+    width: 55%;
+    height: 25%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.583);
+    border: 3px solid white;
+
+}
+
+
+.container-cadastro {
+    width: 45%;
+    padding: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.double-width  mat-form-field{
+    width: 49%;
+    margin-right: 5px;
+   
+}
