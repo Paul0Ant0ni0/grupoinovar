@@ -24,25 +24,67 @@
 
 }
 
-.container-principal, .box-1 {
+.container-principal, .box-1, .box-2, .box-3 {
     padding-top: 45px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    margin-bottom: 15px;
+
+}
+
+.box-3 {
+    width: 100%;
+    height: auto;
+    padding: 85px;
+    background-image: url('../../../../assets/images/bg-inferior.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+}
+.texto-com-linha {
+    display: block;
+    width: 100%;
+    text-align: center;
 }
 
 .img-card {
-    width: 150px;
+    width: 100%;
 }
 
 
 .double-width {
     width: 55%;
+    text-align: justify;
+}
+
+.double-width:nth-child(1){
+    background-color: white;
+    width: 40%;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.double-width .texto-apresentacao{
+    color: white;
+}
+
+.container-servicos {
+    width: 95%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .card-servicos {
-    width: 20%;
+    width: clamp(100px, 35%, 350px);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 15px;
 }
 
 

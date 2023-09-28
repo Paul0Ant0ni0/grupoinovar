@@ -45,20 +45,22 @@
       <div class="double-width">
         <h3>Excelência em Prestação de Serviços: Inovar é a Referência</h3>
         <p>
-          Inovar: Uma distinta referência na prestação de serviços para Condomínios Residenciais, Comerciais, Indústrias,
-          Escritórios, Clínicas e outros setores. Nossa filosofia dinâmica visa a excelência, destacando nossos parceiros
+          Inovar: Uma distinta referência na prestação de serviços para Condomínios Residenciais, Comerciais,
+          Indústrias,
+          Escritórios, Clínicas e outros setores. Nossa filosofia dinâmica visa a excelência, destacando nossos
+          parceiros
           como líderes em seus serviços.
         </p>
       </div>
-      
+
     </section>
 
+    <h3 class="texto-com-linha">Serviços</h3>
     <section class="box-2">
-      <h3 class="texto-com-linha">Serviços</h3>
       <div class="container-servicos">
         <mat-card class="card-servicos" *ngFor="let servico of servicos">
           <mat-card-header>
-            <img class="img-card" [src]="servico.img" >
+            <img class="img-card" [src]="servico.img">
           </mat-card-header>
           <mat-card-title>{{servico.titulo}}</mat-card-title>
           <mat-card-content>
@@ -68,13 +70,30 @@
             <button mat-button>ORÇAMENTO</button>
           </mat-card-actions>
         </mat-card>
-        
 
-            <img src="../../../../assets/images/jardinagem.jpg" alt="" srcset="">
+
+      </div>
+    </section>
+
+    <section class="box-3">
+      <div class="double-width">
+        <h6>Potencialize seu Foco: Soluções Sob Medida para Empresas e Condomínios</h6>
+        <p>Concentre-se em suas operações e explore nossas opções personalizadas, seja para empresas ou condomínios,
+          para otimizar a eficácia e qualidade dos serviços.</p>
+        <a href="#">Saiba Mais...</a>
+      </div>
+      <div class="double-width">
+        <p class="texto-apresentacao">
+          A Inovar é hoje uma das mais tradicionais referências nas áreas de prestação de
+          serviços para Condomínios Residenciais, Condomínios Comerciais, Indústrias, Escritórios, Clínicas e outros.
+          Através de uma filosofia dinâmica, nosso objetivo é fazer com que nossos parceiros se destaquem em seus
+          serviços
+        </p>
       </div>
     </section>
   </div>
 
- 
+
+  |<app-footer></app-footer>
 
 </main>
