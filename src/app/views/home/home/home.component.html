@@ -32,13 +32,49 @@
     </button>
   </div>
 
-  <div>
-    <section class="servicos-icones">
-      <div *ngFor="let item of section">
-        <img [src]="item.img" alt="" width="65">
-        <p>{{item.titulo}}</p>
+  <section class="servicos-icones">
+    <div *ngFor="let item of section">
+      <img [src]="item.img" alt="" width="65">
+      <p>{{item.titulo}}</p>
+    </div>
+  </section>
+
+  <div class="container-principal">
+    <section class="box-1">
+      <img src="../../../../assets/images/img-01.png" alt="img-info" width="350">
+      <div class="double-width">
+        <h3>Excelência em Prestação de Serviços: Inovar é a Referência</h3>
+        <p>
+          Inovar: Uma distinta referência na prestação de serviços para Condomínios Residenciais, Comerciais, Indústrias,
+          Escritórios, Clínicas e outros setores. Nossa filosofia dinâmica visa a excelência, destacando nossos parceiros
+          como líderes em seus serviços.
+        </p>
+      </div>
+      
+    </section>
+
+    <section class="box-2">
+      <h3 class="texto-com-linha">Serviços</h3>
+      <div class="container-servicos">
+        <mat-card class="card-servicos" *ngFor="let servico of servicos">
+          <mat-card-header>
+            <img class="img-card" [src]="servico.img" >
+          </mat-card-header>
+          <mat-card-title>{{servico.titulo}}</mat-card-title>
+          <mat-card-content>
+            <p> {{servico.texto}}</p>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-button>ORÇAMENTO</button>
+          </mat-card-actions>
+        </mat-card>
+        
+
+            <img src="../../../../assets/images/jardinagem.jpg" alt="" srcset="">
       </div>
     </section>
   </div>
+
+ 
 
 </main>

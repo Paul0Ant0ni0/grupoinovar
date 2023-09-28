@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { items } from 'src/app/shared/uil';
+import { cardServicos, items } from 'src/app/shared/util';
 
 @Component({
   selector: 'app-home',
@@ -8,6 +8,7 @@ import { items } from 'src/app/shared/uil';
 })
 export class HomeComponent {
   public section: any[] = items;
+  public servicos: any[] = cardServicos;
 
   constructor(){
    
