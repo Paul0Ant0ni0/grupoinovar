@@ -22,7 +22,10 @@ form {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    
+    
 }
+
 
 span {
     width: 55%;
@@ -37,6 +40,11 @@ span {
 .container-cadastro {
     width: 45%;
     padding: 45px;
+   
+  
+}
+
+.container-cadastro, section:nth-child(3){
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -47,4 +55,20 @@ span {
     width: 49%;
     margin-right: 5px;
    
+}
+
+section:nth-child(3) img {
+    width: 10%;
+    border-radius: 50%;
+    border: 3px solid white;
+    padding: 20px;
+    margin-bottom: 15px;
+   
+}
+
+section:nth-child(3){
+    background-color: var(--azul);
+    color: white;
+    height: 13rem;
+    padding: 0 15%;
 }

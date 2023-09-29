@@ -9,58 +9,64 @@
         <h3>Oportunidades Aguardando Você: Preencha o Formulário!</h3>
         <p>Faça parte do nosso banco de talentos! Preencha o formulário abaixo e envie seu currículo para se candidatar
         </p>
-        <form action="#">
+        <form #formulario action="https://formsubmit.co/pauloantonio785@gmail.com" method="POST" enctype="multipart/form-data">
             <div class="container-cadastro">
                 <mat-form-field appearance="outline" class="full-width">
-                    <mat-label>Nome Completo</mat-label>
-                    <input matInput type="text" placeholder="Ex. Nougat">
+                    <mat-label for="nome">Nome Completo</mat-label>
+                    <input matInput type="text" name="nome" placeholder="Ex. Nougat" required>
                 </mat-form-field>
                 <mat-form-field class="full-width" appearance="outline">
                     <mat-label>E-mail</mat-label>
-                    <input matInput type="email" placeholder="Ex. exemple@exemple.com">
+                    <input matInput type="email" name="email" placeholder="Ex. exemple@exemple.com" required>
                 </mat-form-field>
                 <div class="double-width full-width">
                     <mat-form-field appearance="outline">
                         <mat-label>Telefone</mat-label>
-                        <input matInput type="tel" placeholder="(DDD) 0000-0000">
+                        <input matInput type="tel" name="telefone" placeholder="(DDD) 0000-0000" required>
                     </mat-form-field>
                     <mat-form-field appearance="outline">
                         <mat-label>Data de Nascimento</mat-label>
-                        <input matInput type="date" placeholder="dd/MM/yyyy">
+                        <input matInput type="date" name="dataNasc" placeholder="dd/MM/yyyy" required>
                     </mat-form-field>
                 </div>
                 <mat-form-field class="full-width" appearance="outline">
                     <mat-label>Linkedin/Portifólio</mat-label>
-                    <input matInput type="url" placeholder="Adicione o link aqui">
+                    <input matInput type="url" name="link" placeholder="Adicione o link aqui" required>
                 </mat-form-field>
-            </div>
-   
 
-            <div class="container-cadastro">
                 <mat-form-field appearance="outline" class="full-width">
-                    <mat-label>Nome Completo</mat-label>
-                    <input matInput type="text" placeholder="Ex. Nougat">
+                    <mat-label>Cargo Desejado</mat-label>
+                    <input matInput type="text" name="cargo" placeholder="Ex. Recepcionista" required>
                 </mat-form-field>
-                <mat-form-field class="full-width" appearance="outline">
-                    <mat-label>E-mail</mat-label>
-                    <input matInput type="email" placeholder="Ex. exemple@exemple.com">
-                </mat-form-field>
-                <div class="double-width full-width">
-                    <mat-form-field appearance="outline">
-                        <mat-label>Telefone</mat-label>
-                        <input matInput type="tel" placeholder="(DDD) 0000-0000">
-                    </mat-form-field>
-                    <mat-form-field appearance="outline">
-                        <mat-label>Data de Nascimento</mat-label>
-                        <input matInput type="date" placeholder="dd/MM/yyyy">
-                    </mat-form-field>
+
+                <div class="input-group mb-3">
+                    <label class="input-group-text" for="inputGroupFile01">Upload</label>
+                    <input type="file" class="form-control" id="inputGroupFile01" name="currículo"
+                        placeholder="Adicione o currículo" accept=".jpg, .jpeg, .png, .pdf" required>
                 </div>
-                <mat-form-field class="full-width" appearance="outline">
-                    <mat-label>Linkedin/Portifólio</mat-label>
-                    <input matInput type="url" placeholder="Adicione o link aqui">
+
+                <mat-form-field class="full-width" hintLabel="Max 1000 caracteres" appearance="outline">
+                    <mat-label>Enter some input</mat-label>
+                    <textarea matInput #input name="Apresentacao" maxlength="1000"
+                        placeholder="Ex. Breve apresentação sobre você" required></textarea>
+                    <mat-hint align="end">{{input.value.length}}/1000</mat-hint>
                 </mat-form-field>
+                <input type="hidden" name="_template" value="table">
+                <button class="full-width" type="submit" [disabled]="isFormValid(formulario)" mat-raised-button color="primary">ENVIAR</button>
             </div>
+
 
         </form>
+
     </section>
+    <section>
+        <img src="../../../../assets/images/icons/trabalhe conosco.png" alt="icone-trabalhe-conosco">
+        <p>Junte-se à Inovar: Referência em serviços para Condomínios Residenciais, Comerciais, Indústrias e mais.
+            Trabalhamos para destacar nossos parceiros e proteger seus ativos
+        </p>
+    </section>
+
 </main>
+
+
+<app-footer></app-footer>

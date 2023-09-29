@@ -7,4 +7,28 @@ import { Component } from '@angular/core';
 })
 export class TrabalheConoscoComponent {
 
+
+
+
+  constructor() { }
+
+  ngOnInit(): void {
+
+
+  }
+
+  public isFormValid(formulario: HTMLFormElement): boolean {
+   
+  
+    console.log(formulario);
+    return true
+  }
+  
+  
+
+
+
+
+
+
 }
