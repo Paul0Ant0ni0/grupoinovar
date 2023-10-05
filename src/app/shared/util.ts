@@ -126,3 +126,40 @@ export const cardBeneficios: any[] =[
     },
 
 ];
+
+
+export const faqPerguntas: any[] =[
+
+    {
+        pergunta: '1. Quais são os serviços oferecidos pela Inovar?',
+        resposta: 'Oferecemos uma ampla gama de serviços, incluindo portaria 24 horas, controlador de acesso, auxiliar de zeladoria, recepcionista, limpeza predial, auxiliar de limpeza, auxiliar de serviços gerais, auxiliar de manutenção, jardinagem e manobrista.'
+    },
+    {
+        pergunta: '2. Como posso solicitar um orçamento para os serviços da Inovar?',
+        resposta: 'Para solicitar um orçamento personalizado, basta preencher o formulário de contato em nossa página ou entrar em contato conosco por telefone. Nossa equipe entrará em contato com você para discutir suas necessidades e oferecer uma cotação adequada.'
+    },
+    {
+        pergunta: '3. Vocês atendem apenas condomínios ou também prestam serviços para empresas e clínicas?',
+        resposta: 'Atendemos uma variedade de clientes, incluindo condomínios residenciais, condomínios comerciais, indústrias, escritórios, clínicas e outros tipos de negócios. Nossa ampla gama de serviços pode ser adaptada para atender às necessidades de diferentes setores.'
+    },
+    {
+        pergunta: '4. Como funciona o serviço de manutenção preventiva e corretiva?',
+        resposta: 'Nossos profissionais altamente qualificados planejam e executam serviços de manutenção para máquinas, equipamentos e instalações. A manutenção preventiva é realizada regularmente para evitar problemas futuros, enquanto a manutenção corretiva trata de resolver problemas existentes de forma eficiente.'
+    },
+    {
+        pergunta: '5.  Como posso entrar em contato em caso de emergência?',
+        resposta: 'Para situações de emergência, fornecemos informações de contato específicas para atendimento de emergência em nossa página de contato. Você pode nos ligar imediatamente para obter assistência.'
+    },
+    {
+        pergunta: '6.  Vocês oferecem serviços personalizados para atender às necessidades específicas dos clientes?',
+        resposta: 'Sim, estamos comprometidos em oferecer soluções personalizadas para cada cliente. Trabalharemos em estreita colaboração com você para adaptar nossos serviços de acordo com suas necessidades exclusivas.'
+    },
+    {
+        pergunta: '7. Quais são os benefícios de ter um estacionamento com manobrista?',
+        resposta: 'Um estacionamento com manobrista oferece conveniência, segurança e um toque de luxo aos seus clientes. Além disso, ajuda a melhorar a experiência geral de visitantes e clientes, tornando seu negócio mais atraente.'
+    },
+    {
+        pergunta: '8.  Como posso acompanhar o status dos serviços prestados pela Inovar?',
+        resposta: 'Fornecemos atualizações regulares sobre o progresso dos serviços prestados. Você pode entrar em contato conosco a qualquer momento para obter informações atualizadas sobre o status e a qualidade dos nossos serviços.'
+    }
+];

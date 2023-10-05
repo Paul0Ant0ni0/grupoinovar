@@ -75,7 +75,8 @@ import { MatNativeDateModule } from '@angular/material/core'
     MatToolbarModule,
     MatTreeModule,
     MatTooltipModule,
-    MatNativeDateModule
+    MatNativeDateModule,
+    MatCheckboxModule
   ]
 })
 export class MaterialModule {

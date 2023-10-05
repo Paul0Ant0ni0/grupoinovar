@@ -17,7 +17,7 @@
             <p>
                 Preencha o formulário abaixo que entraremos em contato para explicar como.
             </p>
-            <form #formulario action="https://formsubmit.co/pauloantonio785@gmail.com" method="POST">
+            <form #formulario_1 action="https://formsubmit.co/pauloantonio785@gmail.com" method="POST">
                 <div class="container-cadastro">
                     <mat-form-field appearance="outline" class="full-width">
                         <mat-label for="nome">Nome Completo</mat-label>
@@ -33,18 +33,18 @@
                             <input matInput type="tel" name="Telefone" placeholder="(DDD) 0000-0000" required>
                         </mat-form-field>
                         <input type="hidden" name="Assunto" [value]="assunto.value">
-                        <mat-form-field  class="full-width" appearance="outline">
+                        <mat-form-field class="full-width" appearance="outline">
                             <mat-label>Assunto</mat-label>
-                              <mat-select type="text" #assunto name="Assunto" placeholder="E. Elogio" required>
+                            <mat-select type="text" #assunto name="Assunto" placeholder="E. Elogio" required>
                                 <mat-option value="Orçamento">Orçamento</mat-option>
                                 <mat-option value="Dúvida">Dúvida</mat-option>
                                 <mat-option value="Elogio">Elogio</mat-option>
                                 <mat-option value="Reclamação">Reclamação</mat-option>
                                 <mat-option value="Reclamação">Sugestão</mat-option>
-                              </mat-select>
+                            </mat-select>
                         </mat-form-field>
                     </div>
-                    <mat-form-field class="full-width" hintLabel="Max 1000 caracteres" appearance="outline">
+                    <mat-form-field class="full-width" appearance="outline">
                         <mat-label>Mensagem</mat-label>
                         <textarea matInput #input name="Mensagem" maxlength="1000" placeholder="Ex. Breve mensagem..."
                             required></textarea>
@@ -55,7 +55,7 @@
                     <input type="hidden" name="_captcha" value="false">
                     <input type="hidden" name="_autoresponse"
                         value="Sua mensagem foi recebida! Responderemos o mais breve possível.">
-                    <button class="full-width" type="submit" [disabled]="!isFormValid(formulario)" mat-raised-button
+                    <button class="full-width" type="submit" [disabled]="!isFormValid(formulario_1)" mat-raised-button
                         color="primary">ENVIAR</button>
                 </div>
             </form>
@@ -78,12 +78,162 @@
         </div>
     </section>
     <section class="box-2">
-        <a href="https://api.whatsapp.com/send?phone=5511917791552" target="_blank" title="Fale direto no whatsapp 📞📲">
+        <a href="https://api.whatsapp.com/send?phone=5511917791552" target="_blank"
+            title="Fale direto no whatsapp 📞📲">
             <img src="../../../../assets/images/consultores.png" alt="consultores-icon">
             <h3>FALE COM UM DE NOSSOS CONSULTORES</h3>
         </a>
     </section>
 
+    <section class="box-3">
+        <h3>Solicite um Orçamento</h3>
+        <p>Este é um formulário empresarial. Caso deseje se juntar à equipe da Inovar, por favor, clique na opção
+            abaixo.
+        </p>
+        <mat-tab-group mat-stretch-tabs class="example-stretched-tabs mat-elevation-z4">
+            <mat-tab label="Solicitar Proposta">
+
+                <form #formulario_2 action="https://formsubmit.co/pauloantonio785@gmail.com" method="POST">
+                    <div class="container-cadastro">
+                        <div style="display: flex;">
+                        <mat-form-field appearance="outline" class="full-width">
+                            <mat-label for="nome">Nome Completo</mat-label>
+                            <input matInput type="text" name="Nome" placeholder="Ex. Nougat" required>
+                        </mat-form-field>
+                        <mat-form-field class="full-width" appearance="outline">
+                            <mat-label>Nome do Condomínio/Empresa </mat-label>
+                            <input matInput type="text" name="Nome do Condomínio/Empresa" placeholder="Ex. Exemplo LTDA" required>
+                        </mat-form-field>
+                        </div>
+                        <div style="display: flex;">
+                            <mat-form-field class="full-width" appearance="outline">
+                                <mat-label>Email</mat-label>
+                                <input matInput type="email" name="E-mail" placeholder="E. exemple@exemple.com.br" required>
+                            </mat-form-field>
+                            <mat-form-field class="full-width" appearance="outline">
+                                <mat-label>Quantas unidades possui o condomínio ?</mat-label>
+                                <input matInput type="number" name="Unidades do condomínio" placeholder="Ex. 5" required>
+                            </mat-form-field>
+                        </div>
+                        <div style="display: flex;">
+                            <mat-form-field class="full-width" appearance="outline">
+                                <mat-label>Telefone</mat-label>
+                                <input matInput type="tel" name="Telefone" placeholder="Ex. (DDD) 0000-0000" required>
+                            </mat-form-field>
+                            <input type="hidden" name="Serviço_de-Interesse" [value]="servico.value">
+                            <mat-form-field class="full-width" appearance="outline">
+                                <mat-label>Serviços de interesse:</mat-label>
+                                <mat-select type="text" #servico name="Serviço_de-Interesse" placeholder="Ex. Manobrista" required multiple="true">
+                                    <mat-option *ngFor="let serv of opcoesServicos" [value]="serv">{{serv}}</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+                        <mat-form-field class="full-width" appearance="outline">
+                            <mat-label>Mensagem</mat-label>
+                            <textarea matInput #input name="Mensagem" maxlength="1000"
+                                placeholder="Ex. Breve mensagem..." required></textarea>
+                            <mat-hint align="end">{{input.value.length}}/1000</mat-hint>
+                        </mat-form-field>
+
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_autoresponse"
+                            value="Sua mensagem foi recebida! Responderemos o mais breve possível.">
+                        <button class="full-width" type="submit" [disabled]="!isFormValid(formulario_2)" mat-raised-button
+                            color="primary">ENVIAR</button>
+                    </div>
+                </form>
+
+            </mat-tab>
+            <mat-tab label="Trabalhe Conosco">
+
+                <form #formulario_3 action="https://formsubmit.co/pauloantonio785@gmail.com" method="POST"
+                    enctype="multipart/form-data">
+                    <div class="container-cadastro">
+
+                        <mat-form-field appearance="outline" class="full-width">
+                            <mat-label for="nome">Nome Completo</mat-label>
+                            <input matInput type="text" name="Nome" placeholder="Ex. Nougat" required>
+                        </mat-form-field>
+
+                        <mat-form-field class="full-width" appearance="outline">
+                            <mat-label>E-mail</mat-label>
+                            <input matInput type="email" name="E-mail" placeholder="Ex. exemple@exemple.com" required>
+                        </mat-form-field>
+
+                        <div class="full-width double-width">
+
+                            <mat-form-field appearance="outline">
+                                <mat-label>Telefone</mat-label>
+                                <input matInput type="tel" name="Telefone" placeholder="(DDD) 0000-0000" required>
+                            </mat-form-field>
+
+                            <mat-form-field appearance="outline">
+                                <mat-label>Data de Nascimento</mat-label>
+                                <input matInput type="date" name="Data Nascimento" placeholder="dd/MM/yyyy" required>
+                            </mat-form-field>
+
+                        </div>
+
+                        <mat-form-field class="full-width" appearance="outline">
+                            <input matInput type="text" #link name="Pretensão Salarial" placeholder="R$ 1.000,00"
+                                required>
+                        </mat-form-field>
+
+                        <mat-form-field appearance="outline" class="full-width">
+                            <mat-label>Cargo Desejado</mat-label>
+                            <input matInput type="text" name="Cargo" placeholder="Ex. Recepcionista" required>
+                        </mat-form-field>
+                        <mat-form-field class="full-width" appearance="outline">
+                            <mat-label>Apresentação*</mat-label>
+                            <textarea matInput #input name="Apresentacao" maxlength="1000"
+                                placeholder="Ex. Breve apresentação sobre você" required></textarea>
+                            <mat-hint align="end">{{input.value.length}}/1000</mat-hint>
+                        </mat-form-field>
+
+                        <div class="input-group mb-3 border border-dark p-2">
+                            <label class="input-group-text" for="inputGroupFile01">Currículo</label>
+                            <input type="file" class="form-control" id="inputGroupFile01" name="currículo"
+                                placeholder="Adicione o currículo" accept=".jpg, .jpeg, .png, .pdf" required>
+                        </div>
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_autoresponse"
+                            value="Sua mensagem foi recebida! Responderemos o mais breve possível.">
+
+                        <button class="full-width" type="submit" [disabled]="!isFormValid(formulario_3)" mat-raised-button
+                            color="primary">ENVIAR</button>
+
+                    </div>
+                </form>
+
+            </mat-tab>
+        </mat-tab-group>
+
+    </section>
+    <section class="box-4">
+        <h3>Dúvidas e perguntas frequentes?</h3>
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item" *ngFor="let faq of faqs; let i = index">
+              <h2 class="accordion-header" [id]="'heading' + i">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        [attr.aria-controls]="'collapse' + i" [attr.data-bs-target]="'#collapse' + i">
+                  {{faq.pergunta}}
+                </button>
+              </h2>
+              <div [id]="'collapse' + i" class="accordion-collapse collapse" [attr.aria-labelledby]="'heading' + i"
+                   data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>{{faq.resposta}}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          
+          
+
+    </section>
 </main>
 
 <app-footer></app-footer>

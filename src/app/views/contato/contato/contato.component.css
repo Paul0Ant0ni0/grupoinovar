@@ -92,6 +92,9 @@ main {
     color: white;
 }
 
+
+
+
 .box-2 {
 
     background-color: var(--azul);
@@ -117,3 +120,59 @@ main {
     font-weight: 500;
     line-height: normal;
 }
+
+
+.box-3 {
+    width: 95%;
+    box-shadow: 2px 2px 5px rgba(203, 203, 203, 0.259);
+    padding: 15px;
+    margin: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+.box-3 mat-tab-group{
+    width: 85%;
+    height: auto;
+    margin: 5% auto;
+}
+
+.box-3 mat-tab-group  form{
+    padding: 25px;
+}
+
+
+.double-width  mat-form-field{
+    width: 33.23rem;
+    margin-right: 5px;
+   
+}
+
+
+.box-4 {
+    width: 100%;
+    padding: 25px;
+}
+
+.accordion {
+    width: 82%;
+    margin: 5% auto;
+   
+}
+
+.accordion-button {
+    background-color: #f4f4f4 !important;
+}
+
+

@@ -15,7 +15,8 @@ import { ComponentsModule } from 'src/app/components/components.module';
     CommonModule,
     ContatoRoutingModule,
     ComponentsModule,
-    MaterialModule
+    MaterialModule,
+    
   ]
 })
 export class ContatoModule { }
