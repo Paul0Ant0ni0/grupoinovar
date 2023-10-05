@@ -36,13 +36,14 @@ footer p:last-child{
   
   /* Container da seção de redes sociais */
   .footer-social {
-    flex: 1;
     display: flex;
     justify-content: flex-end;
-    align-items: flex-end;
+    align-items: flex-start;
     flex-direction: column;
     margin: 50px 100px;
+    text-align: right;
   }
+
   
   /* Estilos para os ícones de redes sociais (coloque as classes ou ícones apropriados) */
   .footer-social-icon {
@@ -53,6 +54,6 @@ footer p:last-child{
   /* Estilos para o título "REDE SOCIAIS" */
   .footer-social h4 {
     font-size: 16px;
-    margin-bottom: 10px;
+   margin-left: 5px;
   }
   
