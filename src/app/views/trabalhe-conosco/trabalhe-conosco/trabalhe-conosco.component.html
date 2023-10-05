@@ -53,6 +53,11 @@
            <mat-icon matPrefix>work</mat-icon>
            <input matInput type="text" name="Cargo" placeholder="Ex. Recepcionista" required>
        </mat-form-field>
+       <div class="input-group mb-3 border border-dark p-2">
+        <label class="input-group-text" for="inputGroupFile01">Currículo</label>
+        <input type="file" class="form-control" id="inputGroupFile01" name="Currículo"
+            placeholder="Adicione o currículo" accept=".jpg, .jpeg, .png, .pdf" required>
+    </div>
        <mat-form-field class="full-width" appearance="outline">
            <mat-label>Apresentação*</mat-label>
            <mat-icon matPrefix>description</mat-icon>
@@ -61,11 +66,7 @@
            <mat-hint align="end">{{input.value.length}}/1000</mat-hint>
        </mat-form-field>
   
-       <div class="input-group mb-3 border border-dark p-2">
-           <label class="input-group-text" for="inputGroupFile01">Currículo</label>
-           <input type="file" class="form-control" id="inputGroupFile01" name="currículo"
-               placeholder="Adicione o currículo" accept=".jpg, .jpeg, .png, .pdf" required>
-       </div>
+       
        <input type="hidden" name="_template" value="table">
        <input type="hidden" name="_captcha" value="false">
        <input type="hidden" name="_autoresponse"
