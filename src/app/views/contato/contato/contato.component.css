@@ -1,0 +1,119 @@
+main {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+
+.container-header {
+    background-image: url('../../../../assets/images/bg-superior-servicos.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 3%;
+
+}
+
+.double-width:first-child {
+    width: 650px;
+    height: 208px;
+    flex-shrink: 0;
+    padding: 10px 15px;
+    border: 1px solid #010080;
+    background: linear-gradient(89deg, #FFF 1.32%, rgba(255, 255, 255, 0.41) 45.73%, #FFF 88.62%);
+    text-align: left;
+}
+
+.double-width:nth-child(2) {
+    width: 40%;
+    background-color: white;
+    padding: 15px;
+    text-align: center;
+    margin: 35px;
+
+}
+
+.box-1 h4 {
+    width: 35%;
+    margin: 5% auto;
+    color: var(--azul);
+    text-align: center;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.container-beneficios {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.card-beneficios {
+    background-image: linear-gradient(to bottom, var(--azul), var(--azul));
+    background-size: 100% 0;
+    /* O gradiente começa sem altura (0) */
+    background-repeat: no-repeat;
+    transition: background-size 0.3s ease;
+    /* Adiciona uma transição suave à animação */
+    width: 23%;
+    height: 280px;
+    margin: 10px 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    transition: background-size 0.5s ease;
+    border-top: 2px solid var(--azul);
+    border-bottom: 2px solid var(--azul);
+}
+
+.card-beneficios img {
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+.card-beneficios:hover {
+    background-image: linear-gradient(to bottom, var(--azul), var(--azul));
+    background-size: 100% 100%;
+    /* O gradiente cobre todo o fundo de cima para baixo durante o hover */
+    color: white;
+}
+
+.box-2 {
+
+    background-color: var(--azul);
+    width: 100%;
+    height: 15rem;
+    margin: 5% 0;
+    color: white;
+    outline: 5px solid rgb(255, 255, 255);
+}
+
+
+.box-2 img {
+    width: 8%;
+    margin: 15px 0;
+}
+
+.box-2 h3 {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}

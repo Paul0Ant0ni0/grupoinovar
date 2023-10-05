@@ -19,7 +19,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     TrabalheConoscoRoutingModule,
     ComponentsModule,
     MaterialModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+  
     
   ]
 })

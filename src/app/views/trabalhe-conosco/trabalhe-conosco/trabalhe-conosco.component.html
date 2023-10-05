@@ -9,54 +9,74 @@
         <h3>Oportunidades Aguardando Você: Preencha o Formulário!</h3>
         <p>Faça parte do nosso banco de talentos! Preencha o formulário abaixo e envie seu currículo para se candidatar
         </p>
-        <form #formulario action="https://formsubmit.co/pauloantonio785@gmail.com" method="POST" enctype="multipart/form-data">
-            <div class="container-cadastro">
-                <mat-form-field appearance="outline" class="full-width">
-                    <mat-label for="nome">Nome Completo</mat-label>
-                    <input matInput type="text" name="nome" placeholder="Ex. Nougat" required>
-                </mat-form-field>
-                <mat-form-field class="full-width" appearance="outline">
-                    <mat-label>E-mail</mat-label>
-                    <input matInput type="email" name="email" placeholder="Ex. exemple@exemple.com" required>
-                </mat-form-field>
-                <div class="double-width full-width">
-                    <mat-form-field appearance="outline">
-                        <mat-label>Telefone</mat-label>
-                        <input matInput type="tel" name="telefone" placeholder="(DDD) 0000-0000" required>
-                    </mat-form-field>
-                    <mat-form-field appearance="outline">
-                        <mat-label>Data de Nascimento</mat-label>
-                        <input matInput type="date" name="dataNasc" placeholder="dd/MM/yyyy" required>
-                    </mat-form-field>
-                </div>
-                <mat-form-field class="full-width" appearance="outline">
-                    <mat-label>Linkedin/Portifólio</mat-label>
-                    <input matInput type="url" name="link" placeholder="Adicione o link aqui" required>
-                </mat-form-field>
+       
+   <form #formulario action="https://formsubmit.co/pauloantonio785@gmail.com" method="POST"
+   enctype="multipart/form-data">
+   <div class="container-cadastro">
 
-                <mat-form-field appearance="outline" class="full-width">
-                    <mat-label>Cargo Desejado</mat-label>
-                    <input matInput type="text" name="cargo" placeholder="Ex. Recepcionista" required>
-                </mat-form-field>
+       <mat-form-field appearance="outline" class="full-width">
+           <mat-label for="nome">Nome Completo</mat-label>
+           <mat-icon matPrefix>person</mat-icon>
+           <input matInput type="text" name="Nome" placeholder="Ex. Nougat" required>
+       </mat-form-field>
 
-                <div class="input-group mb-3">
-                    <label class="input-group-text" for="inputGroupFile01">Upload</label>
-                    <input type="file" class="form-control" id="inputGroupFile01" name="currículo"
-                        placeholder="Adicione o currículo" accept=".jpg, .jpeg, .png, .pdf" required>
-                </div>
+       <mat-form-field class="full-width" appearance="outline">
+           <mat-label>E-mail</mat-label>
+           <mat-icon matPrefix>email</mat-icon>
+           <input matInput type="email" name="E-mail" placeholder="Ex. exemple@exemple.com" required>
+       </mat-form-field>
 
-                <mat-form-field class="full-width" hintLabel="Max 1000 caracteres" appearance="outline">
-                    <mat-label>Enter some input</mat-label>
-                    <textarea matInput #input name="Apresentacao" maxlength="1000"
-                        placeholder="Ex. Breve apresentação sobre você" required></textarea>
-                    <mat-hint align="end">{{input.value.length}}/1000</mat-hint>
-                </mat-form-field>
-                <input type="hidden" name="_template" value="table">
-                <button class="full-width" type="submit" [disabled]="isFormValid(formulario)" mat-raised-button color="primary">ENVIAR</button>
-            </div>
+       <div class="full-width double-width">
 
+           <mat-form-field appearance="outline">
+               <mat-label>Telefone</mat-label>
+               <mat-icon matPrefix>phone</mat-icon>
+               <input matInput type="tel" name="Telefone" placeholder="(DDD) 0000-0000" required>
+           </mat-form-field>
 
-        </form>
+           <mat-form-field appearance="outline">
+               <mat-label>Data de Nascimento</mat-label>
+               <mat-icon matPrefix>event</mat-icon>
+               <input matInput type="date" name="Data Nascimento" placeholder="dd/MM/yyyy" required>
+           </mat-form-field>
+
+       </div>
+
+       <mat-form-field class="full-width" appearance="outline">
+           <mat-label>Pretensão Salarial</mat-label>
+           <mat-icon matPrefix>attach_money</mat-icon>
+           <input matInput type="text" #link name="Pretensão Salarial" placeholder="R$ 1.000,00" required>
+       </mat-form-field>
+
+       <mat-form-field appearance="outline" class="full-width">
+           <mat-label>Cargo Desejado</mat-label>
+           <mat-icon matPrefix>work</mat-icon>
+           <input matInput type="text" name="Cargo" placeholder="Ex. Recepcionista" required>
+       </mat-form-field>
+       <mat-form-field class="full-width" appearance="outline">
+           <mat-label>Apresentação*</mat-label>
+           <mat-icon matPrefix>description</mat-icon>
+           <textarea matInput #input name="Apresentacao" maxlength="1000"
+               placeholder="Ex. Breve apresentação sobre você" required></textarea>
+           <mat-hint align="end">{{input.value.length}}/1000</mat-hint>
+       </mat-form-field>
+  
+       <div class="input-group mb-3 border border-dark p-2">
+           <label class="input-group-text" for="inputGroupFile01">Currículo</label>
+           <input type="file" class="form-control" id="inputGroupFile01" name="currículo"
+               placeholder="Adicione o currículo" accept=".jpg, .jpeg, .png, .pdf" required>
+       </div>
+       <input type="hidden" name="_template" value="table">
+       <input type="hidden" name="_captcha" value="false">
+       <input type="hidden" name="_autoresponse"
+           value="Sua mensagem foi recebida! Responderemos o mais breve possível.">
+
+       <button class="full-width" type="submit" [disabled]="!isFormValid(formulario)" mat-raised-button
+           color="primary">ENVIAR</button>
+
+   </div>
+</form>
+
 
     </section>
     <section>
@@ -65,6 +85,20 @@
             Trabalhamos para destacar nossos parceiros e proteger seus ativos
         </p>
     </section>
+
+    <section class="box-2">
+        <div class="container">
+          <mat-card class="card" *ngFor="let card of cardCultura">
+            <mat-card-header>
+              <img class="img-card" [src]="card.img">
+            </mat-card-header>
+            <mat-card-title>{{card.titulo}}</mat-card-title>
+            <mat-card-content>
+              <p> {{card.texto}}</p>
+            </mat-card-content>
+          </mat-card>
+        </div>
+      </section>
 
 </main>
 

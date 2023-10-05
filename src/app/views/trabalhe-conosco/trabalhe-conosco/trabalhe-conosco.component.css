@@ -7,7 +7,7 @@ main {
     height: 25rem;
     background-image: url('../../../../assets/images/bg-superior.svg');
     background-position: center;
-
+    margin-bottom: 5%;
 }
 
 .capa, span {
@@ -71,4 +71,55 @@ section:nth-child(3){
     color: white;
     height: 13rem;
     padding: 0 15%;
+}
+
+.box-2 {
+    padding-top: 45px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+
+}
+
+.container {
+    width: 95%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.card {
+    width: clamp(100px, 35%, 350px);
+    height: 25rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 15px;
+    text-align: justify;
+    color: #8D8D8D;;
+    border-radius: 14px;
+}
+
+
+.card mat-card-title {
+    color:var(--azul);
+    text-align: center;
+    font-family: Inter;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+
+.card:hover{
+    border: 1px solid var(--azul);
+    transform: scale(0.95);
+    transition: 2s;
 }

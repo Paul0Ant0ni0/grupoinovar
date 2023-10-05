@@ -14,10 +14,11 @@ header {
   align-items: center;
   
 }
-.header-top span a{
-  text-decoration: none;
+
+.header-top a:nth-child(2){
   color: white;
 }
+
 .header-main {
   height: 55%;
   padding: 0 35px;
@@ -34,17 +35,17 @@ header {
   flex-wrap: wrap;
 }
 
-.container-contato span{
+.container-contato .menu{
   font-size: 0.8rem;
+  cursor: pointer;
 }
 
 .container-link a {
-  color: rgb(112, 112, 112);
-  text-decoration: none;
   font-size: 1.5rem;
   font-family: Arial, Helvetica, sans-serif;
   transition: color 0.3s;
 }
+
 
 .container-link .btn-orcamento {
   border: 3px solid var(--azul);
@@ -63,6 +64,10 @@ header {
 
 .container-contato span mat-icon {
   font-size: 20px;
+}
+
+.container-link a{
+  color:gray;
 }
 
 /* Estilos para links quando hover ou ativos */

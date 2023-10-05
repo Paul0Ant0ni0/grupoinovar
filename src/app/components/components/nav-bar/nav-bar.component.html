@@ -1,14 +1,14 @@
 <header>
     <section class="header-top">
         <section class="container-contato">
-            <span><mat-icon>call</mat-icon>(11) 91779-1552</span>
-            <span><mat-icon>location_on</mat-icon>R. Elísia Gonçalves Barcelos, 93 - Jardim Reimberg - SP</span>
-            <span><mat-icon>mail</mat-icon>comercial@grupoinovarserv.com.br</span>
+            <span title="Abrir no aplicativo"><mat-icon>call</mat-icon><a href="tel:+5511917791552">(11) 91779-1552</a></span>
+            <span (click)="location()" title="Abrir no Google Maps"><mat-icon>location_on</mat-icon><a>R. Elísia Gonçalves Barcelos, 93 - Jardim Reimberg - SP</a></span>
+            <span title="Abrir no aplicativo"><mat-icon>mail</mat-icon><a href="mailto:comercial@grupoinovarserv.com.br?subject = Feedback&body = Message">comercial@grupoinovarserv.com.br</a></span>
         </section>
 
         <span><mat-icon>person</mat-icon><a routerLink="../trabalhe-conosco">Trabalhe Conosco</a></span>
 
-        <span>
+        <span class="menu">
             <a href="#" target="_blank">
                 <img src="../../../../assets/images/icons/instagram.png" alt="icone-whatsapp">
             </a>

@@ -4,13 +4,15 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { MaterialModule } from '../shared/material/material.module';
 import { RouterModule } from '@angular/router';
 import { FooterComponent } from './components/footer/footer.component';
+import { DetailsLocationComponent } from './components/details-location/details-location.component';
 
 
 
 @NgModule({
   declarations: [
     NavBarComponent,
-    FooterComponent
+    FooterComponent,
+    DetailsLocationComponent
   ],
   imports: [
     CommonModule,
@@ -19,7 +21,8 @@ import { FooterComponent } from './components/footer/footer.component';
     ],
   exports: [
     NavBarComponent,
-    FooterComponent
+    FooterComponent,
+    DetailsLocationComponent
   ]
 })
 export class ComponentsModule { }

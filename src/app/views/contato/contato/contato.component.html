@@ -1,1 +1,89 @@
 <app-nav-bar></app-nav-bar>
+<main>
+    <section class="container-header">
+        <div class="double-width">
+            <h4>Entre em Contato Conosco</h4>
+            <p>
+                Estamos aqui para atender às suas necessidades e responder a todas as suas perguntas. Sinta-se à vontade
+                para entrar em contato conosco por telefone, e-mail ou preenchendo o formulário abaixo. Nossa equipe
+                está pronta para ajudar.
+            </p>
+        </div>
+        <div class="double-width">
+            <h4>
+                Peça Agora um Orçamento Feito Sob Medida com o Grupo Inovar e Veja como Podemos Elevar o Nível de
+                Segurança em Seu Espaço
+            </h4>
+            <p>
+                Preencha o formulário abaixo que entraremos em contato para explicar como.
+            </p>
+            <form #formulario action="https://formsubmit.co/pauloantonio785@gmail.com" method="POST">
+                <div class="container-cadastro">
+                    <mat-form-field appearance="outline" class="full-width">
+                        <mat-label for="nome">Nome Completo</mat-label>
+                        <input matInput type="text" name="Nome" placeholder="Ex. Nougat" required>
+                    </mat-form-field>
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>E-mail</mat-label>
+                        <input matInput type="email" name="E-mail" placeholder="Ex. exemple@exemple.com" required>
+                    </mat-form-field>
+                    <div style="display: flex;">
+                        <mat-form-field class="full-width" appearance="outline">
+                            <mat-label>Telefone</mat-label>
+                            <input matInput type="tel" name="Telefone" placeholder="(DDD) 0000-0000" required>
+                        </mat-form-field>
+                        <input type="hidden" name="Assunto" [value]="assunto.value">
+                        <mat-form-field  class="full-width" appearance="outline">
+                            <mat-label>Assunto</mat-label>
+                              <mat-select type="text" #assunto name="Assunto" placeholder="E. Elogio" required>
+                                <mat-option value="Orçamento">Orçamento</mat-option>
+                                <mat-option value="Dúvida">Dúvida</mat-option>
+                                <mat-option value="Elogio">Elogio</mat-option>
+                                <mat-option value="Reclamação">Reclamação</mat-option>
+                                <mat-option value="Reclamação">Sugestão</mat-option>
+                              </mat-select>
+                        </mat-form-field>
+                    </div>
+                    <mat-form-field class="full-width" hintLabel="Max 1000 caracteres" appearance="outline">
+                        <mat-label>Mensagem</mat-label>
+                        <textarea matInput #input name="Mensagem" maxlength="1000" placeholder="Ex. Breve mensagem..."
+                            required></textarea>
+                        <mat-hint align="end">{{input.value.length}}/1000</mat-hint>
+                    </mat-form-field>
+
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_autoresponse"
+                        value="Sua mensagem foi recebida! Responderemos o mais breve possível.">
+                    <button class="full-width" type="submit" [disabled]="!isFormValid(formulario)" mat-raised-button
+                        color="primary">ENVIAR</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section class="box-1">
+        <h4>Invista no seu Patrimônio com a Inovar e Garanta sua Conservação Ideal</h4>
+        <div class="container-beneficios">
+            <mat-card class="card-beneficios" *ngFor="let beneficio of beneficios">
+                <mat-card-header>
+                    <img class="img-card" [src]="beneficio.img">
+                </mat-card-header>
+                <mat-card-title>
+                    <p>{{beneficio.titulo}}</p>
+                </mat-card-title>
+                <mat-card-content>
+                    <p> {{beneficio.texto}}</p>
+                </mat-card-content>
+            </mat-card>
+        </div>
+    </section>
+    <section class="box-2">
+        <a href="https://api.whatsapp.com/send?phone=5511917791552" target="_blank" title="Fale direto no whatsapp 📞📲">
+            <img src="../../../../assets/images/consultores.png" alt="consultores-icon">
+            <h3>FALE COM UM DE NOSSOS CONSULTORES</h3>
+        </a>
+    </section>
+
+</main>
+
+<app-footer></app-footer>

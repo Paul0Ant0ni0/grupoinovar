@@ -7,7 +7,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 15px;
-    
+
 }
 
 
@@ -24,7 +24,10 @@
 
 }
 
-.container-principal, .box-1, .box-2, .box-3 {
+.container-principal,
+.box-1,
+.box-2,
+.box-3 {
     padding-top: 45px;
     display: flex;
     align-items: center;
@@ -34,6 +37,9 @@
 
 }
 
+
+
+.box-1,
 .box-3 {
     width: 100%;
     height: auto;
@@ -41,9 +47,15 @@
     background-image: url('../../../../assets/images/bg-inferior.svg');
     background-repeat: no-repeat;
     background-size: cover;
-    
+    background-attachment: fixed;
+
 
 }
+
+.box-1 .double-width {
+    color: white;
+}
+
 .texto-com-linha {
     display: block;
     width: 100%;
@@ -52,15 +64,24 @@
 
 .img-card {
     width: 100%;
+
 }
 
+.rotate-animation {
+    transition: transform 0.5s ease;
+}
+
+.rotate-animation:hover {
+    transform: rotate(1080deg);
+    /* 3 voltas completas */
+}
 
 .double-width {
     width: 55%;
     text-align: justify;
 }
 
-.double-width:nth-child(1){
+.double-width:nth-child(1) {
     background-color: white;
     width: clamp(180px, 68%, 350px);
     padding: 15px;
@@ -68,7 +89,7 @@
     margin-bottom: 15px;
 }
 
-.double-width .texto-apresentacao{
+.double-width .texto-apresentacao {
     color: white;
 }
 
@@ -81,11 +102,64 @@
 }
 
 .card-servicos {
+    box-shadow: none;
     width: clamp(100px, 35%, 350px);
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     margin-top: 15px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    border: 1px solid rgba(167, 167, 167, 0.127);
+    text-align: justify;
+    filter: hue-rotate(13deg) saturate(23%) contrast(102%);
+    -webkit-filter: hue-rotate(13deg) saturate(23%) contrast(102%);
+    -moz-filter: hue-rotate(13deg) saturate(23%) contrast(102%);
 }
 
 
+.card-servicos:hover {
+    border: 1px solid var(--azul);
+    box-shadow: 1px 0px 13px -2px rgba(1, 0, 128, 0.31);
+    transform: scale(1.05);
+    /* Aumenta o tamanho do card em 5% quando o mouse passa sobre ele */
+    opacity: 0.9;
+    /* Reduz ligeiramente a opacidade do card ao passar o mouse sobre ele */
+    filter: brightness(98%) hue-rotate(13deg) contrast(148%);
+    -webkit-filter: brightness(98%) hue-rotate(13deg) contrast(148%);
+    -moz-filter: brightness(98%) hue-rotate(13deg) contrast(148%);
+    transition: 1s;
+}
+
+
+.botao {
+    width: 100%;
+    height: 20%;
+    padding: 10px;
+    visibility: hidden;
+    border: 1px solid var(--azul);
+    color: #010080;
+    background-color: white;
+    text-align: center;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.card-servicos:hover .botao {
+    visibility: visible;
+
+}
+
+.botao:hover {
+    background-color: var(--azul);
+    color: white;
+    box-shadow: -1px 7px 50px 4px rgba(1, 0, 128, 0.31)
+}
+
+.botao:active {
+    scale: 0.7;
+    transition: 0.6s;
+}
