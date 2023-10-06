@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { cardBeneficios, faqPerguntas } from 'src/app/shared/util';
+import { cardBeneficios, faqPerguntas, linkSite } from 'src/app/shared/util';
 
 @Component({
   selector: 'app-contato',
@@ -22,7 +22,7 @@ export class ContatoComponent {
     'Jardinagem',
     'Manobrista'
   ];
-
+  public url_Agradecimento: string = linkSite;
 
   constructor() {
     this.beneficios = cardBeneficios;

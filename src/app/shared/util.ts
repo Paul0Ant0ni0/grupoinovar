@@ -163,3 +163,6 @@ export const faqPerguntas: any[] =[
         resposta: 'Fornecemos atualizações regulares sobre o progresso dos serviços prestados. Você pode entrar em contato conosco a qualquer momento para obter informações atualizadas sobre o status e a qualidade dos nossos serviços.'
     }
 ];
+
+
+export const linkSite: string = "http://localhost:4200/agradecimento";

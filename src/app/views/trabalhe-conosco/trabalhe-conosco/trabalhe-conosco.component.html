@@ -10,8 +10,7 @@
         <p>Faça parte do nosso banco de talentos! Preencha o formulário abaixo e envie seu currículo para se candidatar
         </p>
        
-   <form #formulario action="https://formsubmit.co/pauloantonio785@gmail.com" method="POST"
-   enctype="multipart/form-data">
+   <form #formulario action="https://formsubmit.co/pauloantonio785@gmail.com" method="POST" enctype="multipart/form-data">
    <div class="container-cadastro">
 
        <mat-form-field appearance="outline" class="full-width">
@@ -66,7 +65,7 @@
            <mat-hint align="end">{{input.value.length}}/1000</mat-hint>
        </mat-form-field>
   
-       
+       <input type="hidden" name="_next" [value]="url_Agradecimento">
        <input type="hidden" name="_template" value="table">
        <input type="hidden" name="_captcha" value="false">
        <input type="hidden" name="_autoresponse"

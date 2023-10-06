@@ -82,6 +82,10 @@ header {
   color: white;
 }
 
+.responsivo {
+ display: none;
+}
+
 /* Estilos para telas menores (por exemplo, dispositivos móveis) */
 @media (max-width: 768px) {
   header {
@@ -89,16 +93,20 @@ header {
   }
 
   .header-top {
-    height: auto;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 15px;
+    display: none;
   }
 
   .header-main {
+    
+    display: flex;
     flex-direction: column;
-    padding: 15px;
+    justify-content: center;
+    align-items: center;
+   
   }
+
+
+  
 
   .container-link, .container-contato {
     width: 100%;

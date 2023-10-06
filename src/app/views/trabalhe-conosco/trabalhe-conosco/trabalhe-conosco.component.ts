@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { cardCultura, items } from 'src/app/shared/util';
+import { cardCultura, items, linkSite } from 'src/app/shared/util';
 
 @Component({
   selector: 'app-trabalhe-conosco',
@@ -9,7 +9,7 @@ import { cardCultura, items } from 'src/app/shared/util';
 export class TrabalheConoscoComponent {
 
   public cardCultura!: any[]
- 
+  public url_Agradecimento: string = linkSite;
 
   constructor() { }
 

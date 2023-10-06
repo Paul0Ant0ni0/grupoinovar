@@ -31,7 +31,12 @@ const routes: Routes =
       loadChildren: () =>
         import('./views/servicos/servicos.module').then(m => m.ServicosModule),
       title: 'Serviços'
-    }
+    },
+    { path: 'agradecimento', 
+      loadChildren: () => 
+      import('./views/agradecimento/agradecimento.module').then(m => m.AgradecimentoModule),
+      title: 'Agradecimento'
+     }
   ];
 
 @NgModule({
