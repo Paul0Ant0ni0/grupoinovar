@@ -11,10 +11,11 @@ export class HomeComponent {
   public section!: any[];
   public servicos!: any[];
 
-  constructor(){
-   this.servicos = cardServicos;
-   this.section = items;
-  }
+  constructor() {
+    this.servicos = cardServicos;
+    this.section = items;
 
+
+  }
 
 }

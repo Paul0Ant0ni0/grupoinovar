@@ -1,37 +1,146 @@
 <app-nav-bar></app-nav-bar>
 
 <main>
-    <div id="carouselExampleIndicators" class="carousel slide">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-            aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-            aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-            aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="./../../../../assets/images/banner-04.jpeg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="./../../../../assets/images/banner-02.jpeg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="./../../../../assets/images/banner-03.jpeg" class="d-block w-100" alt="...">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+  <div id="carouselExampleIndicators" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./../../../../assets/images/banner-04.jpeg" class="d-block w-100" alt="...">
       </div>
+      <div class="carousel-item">
+        <img src="./../../../../assets/images/banner-02.jpeg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./../../../../assets/images/banner-03.jpeg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <section class="box-1">
+    <h2>Bem-vindo(a) aos Nossos Serviços</h2>
+    <p>No Grupo Inovar, nossa dedicação é oferecer soluções de serviços excepcionais que transcendem as expectativas.
+      Nossos serviços abrangem uma ampla gama de setores, desde Condomínios Residenciais e Comerciais até Indústrias,
+      Escritórios e Clínicas. Com anos de experiência e um compromisso inabalável com a qualidade, somos a escolha
+      preferida quando se trata de atender às necessidades de nossos clientes.
+      Nossos Serviços
+    </p>
+  </section>
+  <section class="box-2">
+    <h2>Nossos Serviços</h2>
+    <div class="container-servicos">
+
+      <mat-card class="card-servicos" *ngFor="let servico of servicos">
+        <mat-card-header>
+          <img class="img-card" [src]="servico.img">
+        </mat-card-header>
+        <mat-card-content>
+          <p> {{servico.texto}}</p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button class="botao" routerLink="../contato">Orçamento</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+    <swiper-container class="mySwiper responsivo" pagination="true" effect="coverflow" grab-cursor="true" centered-slides="true"
+      slides-per-view="auto" coverflow-effect-rotate="50" coverflow-effect-stretch="0" coverflow-effect-depth="100"
+      coverflow-effect-modifier="1" coverflow-effect-slide-shadows="true">
+      <swiper-slide *ngFor="let servico of servicos">
+        <mat-card class="card-servicos">
+          <mat-card-header>
+            <img class="img-card" [src]="servico.img">
+          </mat-card-header>
+          <mat-card-content>
+            <p>{{servico.texto}}</p>
+          </mat-card-content>
+          <mat-card-actions>
+            <button class="botao" routerLink="../contato">Orçamento</button>
+          </mat-card-actions>
+        </mat-card>
+      </swiper-slide>
+
+    </swiper-container>
+  </section>
+
+  <section class="box-3">
+    <h3>
+      Por Que Escolher o Grupo Inovar?
+    </h3>
+    <p>
+      No Grupo Inovar, não apenas oferecemos serviços, mas também construímos relações. Nosso compromisso com a
+      excelência, a inovação constante e a integridade nos coloca à frente. Com uma equipe dedicada e apaixonada,
+      estamos prontos para atender às suas necessidades com profissionalismo e eficiência. Seja qual for o serviço que
+      você precise, estamos aqui para superar suas expectativas e criar um ambiente que reflete o seu padrão de
+      qualidade.
+    </p>
+    <div class="formulario-contato">
+      <h3>
+        Entre em Contato Conosco
+      </h3>
+      <p>
+        Estamos ansiosos para trabalhar em conjunto e transformar suas necessidades em soluções eficazes. Entre em
+        contato conosco hoje para saber mais sobre como podemos elevar a qualidade dos seus serviços. O Grupo Inovar é a
+        sua escolha confiável para serviços que fazem a diferença.
+      </p>
+      <form #formulario_1 action="https://formsubmit.co/pauloantonio785@gmail.com" method="POST">
+        <div class="full-width">
+          <mat-form-field appearance="outline" class="full-width">
+            <mat-label for="nome">Nome Completo</mat-label>
+            <input matInput type="text" name="Nome" placeholder="Ex. Nougat" required>
+          </mat-form-field>
+          <mat-form-field class="full-width" appearance="outline">
+            <mat-label>E-mail</mat-label>
+            <input matInput type="email" name="E-mail" placeholder="Ex. exemple@exemple.com" required>
+          </mat-form-field>
+          <div style="display: flex;">
+            <mat-form-field class="full-width" appearance="outline">
+              <mat-label>Telefone</mat-label>
+              <input matInput type="tel" name="Telefone" placeholder="(DDD) 0000-0000" required>
+            </mat-form-field>
+            <input type="hidden" name="Assunto" [value]="assunto.value">
+            <mat-form-field class="full-width" appearance="outline">
+              <mat-label>Assunto</mat-label>
+              <mat-select type="text" #assunto name="Assunto" placeholder="E. Elogio" required>
+                <mat-option value="Orçamento">Orçamento</mat-option>
+                <mat-option value="Dúvida">Dúvida</mat-option>
+                <mat-option value="Elogio">Elogio</mat-option>
+                <mat-option value="Reclamação">Reclamação</mat-option>
+                <mat-option value="Reclamação">Sugestão</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <mat-form-field class="full-width" appearance="outline">
+            <mat-label>Mensagem</mat-label>
+            <textarea matInput #input name="Mensagem" maxlength="1000" placeholder="Ex. Breve mensagem..."
+              required></textarea>
+            <mat-hint align="end">{{input.value.length}}/1000</mat-hint>
+          </mat-form-field>
+          <input type="hidden" name="_next" [value]="url_Agradecimento">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_autoresponse"
+            value="Sua mensagem foi recebida! Responderemos o mais breve possível.">
+          <button class="full-width" type="submit" [disabled]="!isFormValid(formulario_1)" mat-raised-button
+            color="primary">ENVIAR</button>
+        </div>
+      </form>
+    </div>
+  </section>
 </main>
 
 <app-footer></app-footer>

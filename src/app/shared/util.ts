@@ -60,6 +60,26 @@ export const cardServicos: any[] = [
         img: "../../../../assets/images/auxiliar-servicos-gerais.svg",
         titulo: "Auxiliar de Serviços Gerais",
         texto: "Oferecemos um paisagismo primoroso que valoriza o ambiente e promove o bem-estar de todos que o frequentam. Seu espaço, nossa expertise"
+    },
+    {
+        img: "../../../../assets/images/porteiro.svg",
+        titulo: "Portaria 24 horas",
+        texto: "Destaque-se da concorrência com nosso serviço de estacionamento com manobrista. A excelência que você merece para seu negócio"
+    },
+    {
+        img: "../../../../assets/images/zelador.svg",
+        titulo: "Auxiliar de zeladoria",
+        texto: "O Recepcionista é peça-chave na acolhida e organização de visitantes em nossas instalações no Grupo Inovar."
+    },
+    {
+        img: "../../../../assets/images/limpeza-predial.svg",
+        titulo: "Limpeza Predial",
+        texto: "Oferecemos um paisagismo primoroso que valoriza o ambiente e promove o bem-estar de todos que o frequentam. Seu espaço, nossa expertise"
+    },
+    {
+        img: "../../../../assets/images/auxiliar-limpeza.svg",
+        titulo: "Auxiliar de Limpeza",
+        texto: "Oferecemos um paisagismo primoroso que valoriza o ambiente e promove o bem-estar de todos que o frequentam. Seu espaço, nossa expertise"
     }
 ];
 
