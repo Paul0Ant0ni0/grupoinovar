@@ -24,13 +24,15 @@ export class ContatoComponent {
   ];
   public url_Agradecimento: string = linkSite;
 
-  constructor() {
+  constructor(
+
+  ) {
     this.beneficios = cardBeneficios;
     this.faqs = faqPerguntas;
+  
   }
 
-
-
+  
 
   public isFormValid(formulario: HTMLFormElement): boolean {
     const formData = new FormData(formulario);
