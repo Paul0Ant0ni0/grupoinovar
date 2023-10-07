@@ -28,3 +28,26 @@ a:link:hover{
     
 }
 
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    animation: float 2s infinite;
+}
+
+.whatsapp-button a img {
+    width: 60px; /* Ajuste o tamanho do ícone conforme necessário */
+    height: 60px; /* Ajuste o tamanho do ícone conforme necessário */
+    border: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+@keyframes float {
+    0%, 100% {
+      transform: translateY(0); /* Não se move na vertical no início ou no final */
+    }
+    50% {
+      transform: translateY(-15px); /* Move para cima 15 pixels no meio da animação */
+    }
+  }

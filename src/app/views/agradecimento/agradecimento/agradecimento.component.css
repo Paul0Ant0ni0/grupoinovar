@@ -80,11 +80,3 @@ main {
     }
 }
 
-@keyframes float {
-    0%, 100% {
-      transform: translateY(0); /* Não se move na vertical no início ou no final */
-    }
-    50% {
-      transform: translateY(-15px); /* Move para cima 15 pixels no meio da animação */
-    }
-  }

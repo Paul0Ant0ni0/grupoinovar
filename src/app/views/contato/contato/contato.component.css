@@ -41,7 +41,7 @@ main {
 }
 
 .box-1 h4 {
-    width: 35%;
+    width: clamp(250px, 80%, 550px);
     margin: 5% auto;
     color: var(--azul);
     text-align: center;

@@ -48,7 +48,8 @@ header {
 
 
 .container-link .btn-orcamento {
-  border: 3px solid var(--azul);
+  color: white;
+  background-color:  var(--azul);
   border-radius: 50px;
   padding: 7px 25px;
   transition: background-color 0.8s, color 0.8s;
@@ -78,8 +79,8 @@ header {
 
 .container-link .btn-orcamento:hover {
   color: var(--azul);
-  background-color: var(--azul);
-  color: white;
+  background-color: white;
+  border: 1px solid var(--azul);
 }
 
 .responsivo {
