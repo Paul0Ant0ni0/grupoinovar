@@ -107,13 +107,13 @@
             <mat-label>E-mail</mat-label>
             <input matInput type="email" name="E-mail" placeholder="Ex. exemple@exemple.com" required>
           </mat-form-field>
-          <div style="display: flex;">
-            <mat-form-field class="full-width" appearance="outline">
+          <div class="full-width double-width">
+            <mat-form-field  appearance="outline">
               <mat-label>Telefone</mat-label>
               <input matInput type="tel" name="Telefone" placeholder="(DDD) 0000-0000" required>
             </mat-form-field>
             <input type="hidden" name="Assunto" [value]="assunto.value">
-            <mat-form-field class="full-width" appearance="outline">
+            <mat-form-field  appearance="outline">
               <mat-label>Assunto</mat-label>
               <mat-select type="text" #assunto name="Assunto" placeholder="E. Elogio" required>
                 <mat-option value="Orçamento">Orçamento</mat-option>

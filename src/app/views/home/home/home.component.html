@@ -62,8 +62,7 @@
     <h3 class="texto-com-linha">Serviços</h3>
     <section class="box-2">
       <div class="container-servicos">
-        <mat-card class="card-servicos" *ngFor="let servico of servicos; let i = index">
-          <ng-container *ngIf="i < 6">
+        <mat-card class="card-servicos" *ngFor="let servico of servicos">
             <mat-card-header>
               <img class="img-card" [src]="servico.img">
           </mat-card-header>
@@ -73,7 +72,6 @@
           <mat-card-actions>
               <button class="botao" routerLink="../contato">Orçamento</button>
           </mat-card-actions>
-          </ng-container>
           
       </mat-card>
       

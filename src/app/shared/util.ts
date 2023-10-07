@@ -185,4 +185,4 @@ export const faqPerguntas: any[] =[
 ];
 
 
-export const linkSite: string = "http://localhost:4200/agradecimento";
+export const linkSite: string = "http://192.168.15.83:4200/agradecimento";

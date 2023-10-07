@@ -14,7 +14,7 @@ export class HomeComponent {
   constructor() {
     this.servicos = cardServicos;
     this.section = items;
-
+    this.servicos = this.servicos.slice(0, 6);
 
   }
 
