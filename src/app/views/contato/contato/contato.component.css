@@ -21,7 +21,7 @@ main {
 
 }
 
-.double-width:first-child {
+.double-width-1:first-child {
     width: clamp(150px, 45%, 650px);
     height: 208px;
     flex-shrink: 0;
@@ -31,8 +31,8 @@ main {
     text-align: left;
 }
 
-.double-width:nth-child(2) {
-    width: clamp(350px, 45%, 550px);
+.double-width-1:nth-child(2) {
+    width: clamp(550px, 45%, 850px);
     background-color: white;
     padding: 15px;
     text-align: center;
@@ -136,13 +136,6 @@ main {
 
 
 
-
-
-
-
-
-
-
 .box-3 mat-tab-group{
     width: 85%;
     height: auto;
@@ -155,8 +148,8 @@ main {
 
 
 .double-width  mat-form-field{
-    width: 33.23rem;
-    margin-right: 5px;
+    width: calc(50% - 5px); 
+    margin-right: 5px; 
    
 }
 
@@ -177,3 +170,21 @@ main {
 }
 
 
+@media  (max-width: 768px) {
+    .container-header{
+        background-size: 350%;
+       background-position: -850px;
+    }
+
+    .double-width-1:first-child{
+        display: none;
+    }
+
+    .double-width  mat-form-field{
+        width: 100%;
+    }
+
+
+
+    
+}

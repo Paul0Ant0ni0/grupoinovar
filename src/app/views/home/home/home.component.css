@@ -93,7 +93,7 @@
 
 .double-width:nth-child(1) {
     background-color: white;
-    width: clamp(180px, 68%, 350px);
+    width: clamp(480px, 68%, 350px);
     padding: 15px;
     border-radius: 10px;
     margin-bottom: 15px;
@@ -177,23 +177,36 @@
 }
 
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
 
-    .container-servicos{
+    .container-servicos {
         flex-direction: column;
     }
 
     .card-servicos {
         width: 85%;
     }
-    .box-1, .box-3 {
-    
-        padding: 33px;
+
+    .box-1,
+    .box-3 {
+        padding: 10px;
+       
     }
+
     .double-width {
-        width: 85%;
+        width: 100%;
         margin-top: 45px;
-      
+        
     }
-    
+
+
+
+}
+
+@media (max-width: 950px) {
+    .double-width {
+        width: 100%;
+        margin-top: 45px;
+        padding: 25px;
+    }
 }
