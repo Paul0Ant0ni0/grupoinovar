@@ -185,4 +185,4 @@ export const faqPerguntas: any[] =[
 ];
 
 
-export const linkSite: string = "../agradecimento";
+export const linkSite: string = "https://main--helpful-baklava-38f103.netlify.app/agradecimento";
