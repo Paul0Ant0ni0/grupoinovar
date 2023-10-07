@@ -185,4 +185,4 @@ export const faqPerguntas: any[] =[
 ];
 
 
-export const linkSite: string =  window.location.origin;
+export const linkSite: string =  `${window.location.origin}/agradecimento`;
