@@ -54,32 +54,34 @@ export const cardServicos: any[] = [
     {
         img: "../../../../assets/images/controlador-acesso.svg",
         titulo: "Controlador de Acesso",
-        texto: "Oferecemos um paisagismo primoroso que valoriza o ambiente e promove o bem-estar de todos que o frequentam. Seu espaço, nossa expertise"
+        texto: "Nossa equipe especializada controla e monitora as entradas, implementando medidas de segurança rigorosas para manter seu espaço seguro."
     },
     {
         img: "../../../../assets/images/auxiliar-servicos-gerais.svg",
         titulo: "Auxiliar de Serviços Gerais",
-        texto: "Oferecemos um paisagismo primoroso que valoriza o ambiente e promove o bem-estar de todos que o frequentam. Seu espaço, nossa expertise"
+        texto: "Cuidamos da limpeza, organização e manutenção de suas instalações para criar um ambiente impecável e acolhedor."
     },
     {
         img: "../../../../assets/images/porteiro.svg",
         titulo: "Portaria 24 horas",
-        texto: "Destaque-se da concorrência com nosso serviço de estacionamento com manobrista. A excelência que você merece para seu negócio"
+        texto: "Garantimos segurança ininterrupta e controle de acesso para proteger sua propriedade e assegurar a tranquilidade dos residentes e visitantes."
     },
     {
         img: "../../../../assets/images/zelador.svg",
-        titulo: "Auxiliar de zeladoria",
-        texto: "O Recepcionista é peça-chave na acolhida e organização de visitantes em nossas instalações no Grupo Inovar."
+        titulo: "Auxiliar de Zeladoria",
+        texto: "Profissionais dedicados na manutenção e organização de nossas instalações no Grupo Inovar, assegurando um ambiente impecável e acolhedor para todos."
     },
+    
     {
         img: "../../../../assets/images/limpeza-predial.svg",
         titulo: "Limpeza Predial",
-        texto: "Oferecemos um paisagismo primoroso que valoriza o ambiente e promove o bem-estar de todos que o frequentam. Seu espaço, nossa expertise"
+        texto: "Nossa equipe especializada garante que cada canto do seu espaço esteja impecável, proporcionando um ambiente higienizado e agradável para todos."
     },
+    
     {
         img: "../../../../assets/images/auxiliar-limpeza.svg",
         titulo: "Auxiliar de Limpeza",
-        texto: "Oferecemos um paisagismo primoroso que valoriza o ambiente e promove o bem-estar de todos que o frequentam. Seu espaço, nossa expertise"
+        texto: "Profissionais dedicados a manter cada detalhe do seu espaço limpo e organizado, criando um ambiente saudável e convidativo para todos."
     }
 ];
 
