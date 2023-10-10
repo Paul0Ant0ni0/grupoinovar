@@ -8,7 +8,10 @@
 
 :root {
     --azul: #010080;
-    --cinza: #E8E5F6
+    --azul-claro: rgb(0, 176, 240);
+    --cinza: #E8E5F6;
+    --amarelo: #FCC00A;
+    --verde: rgb(0, 176, 80)
 }
 html, body {width: 100%; height: auto;}
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
@@ -40,6 +43,17 @@ a:link:hover{
     height: 60px; /* Ajuste o tamanho do ícone conforme necessário */
     border: 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.whatsapp-button::before {
+    content: 'Olá! Eu sou a Ivone! Como posso te ajudar?';
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid var(--amarelo);
+    word-wrap: break-word; /* Quebra o texto em palavras */
+    font-weight: 600;
+    ;
 }
 
 

@@ -32,6 +32,7 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
+  
 
   <section class="servicos-icones">
     <div *ngFor="let item of section">
@@ -42,41 +43,51 @@
 
   <div class="container-principal">
     <section class="box-1">
-      <img src="../../../../assets/images/logo.jpeg" alt="img-info" class="img-logo">
       <div class="double-width">
-        <h3>Excelência em Prestação de Serviços: Inovar é a Referência</h3>
-        <p>
-          Inovar: Uma distinta referência na prestação de serviços para Condomínios Residenciais, Comerciais,
-          Indústrias,
-          Escritórios, Clínicas e outros setores. Nossa filosofia dinâmica visa a excelência, destacando nossos
-          parceiros
-          como líderes em seus serviços.
+        <p class="titulo-amarelo">TERCEIRIZAÇÃO DE SERVIÇOS</p>
+        <h3 class="titulo">Excelência em <br> Prestação de Serviços</h3>
+        <p class="texto">
+          Somos a referência em serviços excepcionais para Condomínios Residenciais, Comerciais, Indústrias,
+          Escritórios, Clínicas e muitos outros setores. <br><br>
+
+          Nossa abordagem dinâmica coloca a excelência em primeiro lugar, elevando nossos parceiros à posição de
+          destaque. <br><br>
+
+          Descubra o poder da inovação e da excelência em serviço.
+          Junte-se a nós e alcance o sucesso que você merece! <br><br>
+
+          Grupo Inovar - A Sua Escolha Certa!
+
         </p>
       </div>
 
     </section>
 
-    <h3 class="texto-com-linha">Serviços</h3>
+    <section class="titulo-inferior">
+      <p>GRUPO INOVAR</p>
+      <h3>Serviços de Terceirização      </h3>
+    </section>
+  
     <section class="box-2">
       <div class="container-servicos">
         <mat-card class="card-servicos" *ngFor="let servico of servicos">
-            <mat-card-header>
-              <img class="img-card" [src]="servico.img">
+          <mat-card-header>
+            <img class="img-card" [src]="servico.img">
           </mat-card-header>
-          <mat-card-content>
-              <p> {{servico.texto}}</p>
-          </mat-card-content>
-          <mat-card-actions>
-              <button class="botao" routerLink="../contato">Orçamento</button>
-          </mat-card-actions>
-          
-      </mat-card>
-      
+          <mat-card-title>
+            <p class="titulo-card">{{servico.titulo}}</p></mat-card-title>
 
-
+        </mat-card>
       </div>
+      <a routerLink="/servicos" class="btn-servicos">OUTROS SERVIÇOS
+      </a>
     </section>
-
+    <p class="texto-centro">O Grupo Inovar é hoje uma das mais tradicionais referências nas áreas de prestação de serviços
+      para Condomínios Residenciais, Condomínios Comerciais, Indústrias, Escritórios, Clínicas e outros.
+      <br><br>
+      Através de uma filosofia dinâmica, nosso objetivo é fazer com que nossos parceiros
+      se destaquem em seus serviços.
+    </p>
 
     <section class="box-3">
       <div class="double-width">
@@ -84,14 +95,6 @@
         <p>Concentre-se em suas operações e explore nossas opções personalizadas, seja para empresas ou condomínios,
           para otimizar a eficácia e qualidade dos serviços.</p>
         <a routerLink="../servicos">Saiba Mais...</a>
-      </div>
-      <div class="double-width">
-        <p class="texto-apresentacao">
-          A Inovar é hoje uma das mais tradicionais referências nas áreas de prestação de
-          serviços para Condomínios Residenciais, Condomínios Comerciais, Indústrias, Escritórios, Clínicas e outros.
-          Através de uma filosofia dinâmica, nosso objetivo é fazer com que nossos parceiros se destaquem em seus
-          serviços
-        </p>
       </div>
     </section>
   </div>

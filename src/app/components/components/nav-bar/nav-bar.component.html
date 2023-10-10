@@ -1,12 +1,9 @@
 <header>
     <section class="header-top">
         <section class="container-contato">
-            <span title="Abrir no aplicativo"><mat-icon>call</mat-icon><a href="tel:+5511917791552">(11) 91779-1552</a></span>
-            <span (click)="location()" title="Abrir no Google Maps"><mat-icon>location_on</mat-icon><a>R. Elísia Gonçalves Barcelos, 93 - Jardim Reimberg - SP</a></span>
+            <span title="Abrir no aplicativo"><mat-icon>call</mat-icon><a href="tel:+5511940315672">(11) 94031-5672 / (11) 94034-6312</a></span>
             <span title="Abrir no aplicativo"><mat-icon>mail</mat-icon><a href="mailto:comercial@grupoinovarserv.com.br?subject = Feedback&body = Message">comercial@grupoinovarserv.com.br</a></span>
         </section>
-
-        <span><mat-icon>person</mat-icon><a routerLink="../trabalhe-conosco">Trabalhe Conosco</a></span>
 
         <span class="menu">
             <a href="#" target="_blank">
@@ -26,11 +23,16 @@
         </span>
     </section>
     <section class="header-main">
-        <img src="../../../../assets/images/logo.jpeg" alt="logo" width="100">
+        <a routerLink="/home">
+            <img src="../../../../assets/images/logo.jpeg" alt="logo" width="100">
+        </a>
+        
         <span class="container-link">
             <a routerLink="/home" routerLinkActive="active">Home</a>
             <a routerLink="/servicos" routerLinkActive="active">Serviços</a>
+            <a routerLink="/quem-somos" routerLinkActive="active">Quem Somos</a>
             <a routerLink="/contato" routerLinkActive="active">Contato</a>
+            <a routerLink="../trabalhe-conosco"  routerLinkActive="active">Trabalhe Conosco</a>
             <a routerLink="/contato" class="btn-orcamento">Orçamentos</a>
         </span>
     </section>

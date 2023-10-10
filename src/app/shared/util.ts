@@ -32,54 +32,54 @@ export const items: any[] =
 
 export const cardServicos: any[] = [
     {
-        img: "../../../../assets/images/jardinagem.svg",
+        img: "../../../../assets/images/servicos/1 - JARDINAGEM.jpg",
         titulo: "Jardinagem",
         texto: "Oferecemos um paisagismo primoroso que valoriza o ambiente e promove o bem-estar de todos que o frequentam. Seu espaço, nossa expertise"
     },
     {
-        img: "../../../../assets/images/manuntenção.svg",
+        img: "../../../../assets/images/servicos/2 - MANUTENÇÃO.jpg",
         titulo: "Auxiliar de manutenção",
         texto: "Planejamento e execução de serviços de manutenção preventiva e corretiva em máquinas, equipamentos e instalações. Garantindo o funcionamento eficiente que seu negócio merece."
     },
     {
-        img: "../../../../assets/images/Manobrista.svg",
+        img: "../../../../assets/images/servicos/3 - MANOBRISTA.jpg",
         titulo: "Manobrista",
         texto: "Destaque-se da concorrência com nosso serviço de estacionamento com manobrista. A excelência que você merece para seu negócio"
     },
     {
-        img: "../../../../assets/images/recepcionista.svg",
+        img: "../../../../assets/images/servicos/4 - RECEPCIONISTA.jpg",
         titulo: "Recepcionista",
         texto: "O Recepcionista é peça-chave na acolhida e organização de visitantes em nossas instalações no Grupo Inovar."
     },
     {
-        img: "../../../../assets/images/controlador-acesso.svg",
+        img: "../../../../assets/images/servicos/5 - CONTROLADOR DE ACESSO.jpg",
         titulo: "Controlador de Acesso",
         texto: "Nossa equipe especializada controla e monitora as entradas, implementando medidas de segurança rigorosas para manter seu espaço seguro."
     },
     {
-        img: "../../../../assets/images/auxiliar-servicos-gerais.svg",
+        img: "../../../../assets/images/servicos/6 - AUXILIAR SERVIÇOS GERAIS.jpg",
         titulo: "Auxiliar de Serviços Gerais",
         texto: "Cuidamos da limpeza, organização e manutenção de suas instalações para criar um ambiente impecável e acolhedor."
     },
     {
-        img: "../../../../assets/images/porteiro.svg",
+        img: "../../../../assets/images/servicos/7 - PORTARIA 24 HORAS.jpg",
         titulo: "Portaria 24 horas",
         texto: "Garantimos segurança ininterrupta e controle de acesso para proteger sua propriedade e assegurar a tranquilidade dos residentes e visitantes."
     },
     {
-        img: "../../../../assets/images/zelador.svg",
+        img: "../../../../assets/images/servicos/8 - ZELADORIA.webp",
         titulo: "Auxiliar de Zeladoria",
         texto: "Profissionais dedicados na manutenção e organização de nossas instalações no Grupo Inovar, assegurando um ambiente impecável e acolhedor para todos."
     },
     
     {
-        img: "../../../../assets/images/limpeza-predial.svg",
+        img: "../../../../assets/images/servicos/9 - LIMPEZA PREDIAL.jpg",
         titulo: "Limpeza Predial",
         texto: "Nossa equipe especializada garante que cada canto do seu espaço esteja impecável, proporcionando um ambiente higienizado e agradável para todos."
     },
     
     {
-        img: "../../../../assets/images/auxiliar-limpeza.svg",
+        img: "../../../../assets/images/servicos/10 - AUXILIAR DE LIMPEZA.jpg",
         titulo: "Auxiliar de Limpeza",
         texto: "Profissionais dedicados a manter cada detalhe do seu espaço limpo e organizado, criando um ambiente saudável e convidativo para todos."
     }

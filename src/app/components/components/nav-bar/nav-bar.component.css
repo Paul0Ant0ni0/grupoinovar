@@ -26,6 +26,9 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+.container-link{
+  margin: 0 auto;
+}
 
 .container-link, .container-contato {
   
@@ -74,7 +77,7 @@ header {
 /* Estilos para links quando hover ou ativos */
 .container-link a:hover,
 .container-link a:active{
-  color: var(--azul);
+  color: var(--amarelo);
 }
 
 .container-link .btn-orcamento:hover {
