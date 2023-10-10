@@ -1,74 +1,65 @@
 /* Container principal do footer */
 
-footer p:last-child{
-    height: 18%;
-    margin: 0;
-    background-color: var(--azul);
-    color: white;
-    text-align: center;
-}
+
 .footer-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 20px;
-    background-color: black; /* Cor de fundo do footer */
-    color: white; /* Cor do texto no footer */
-  }
-  
-  /* Container da seção de informações */
-  .footer-info {
-    flex: 1;
-    padding-right: 20px;
-  }
-  
-  /* Estilos para as informações de contato */
-  .footer-info p {
-    font-size: 1rem;
-    margin-bottom: 10px;
-  }
-  
-  .footer-info span {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    font-size: 14px;
-    margin: 20px 0;
-    cursor: pointer;
-  }
-  
-  /* Container da seção de redes sociais */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+  background-color: black;
+  /* Cor de fundo do footer */
+  color: white;
+  /* Cor do texto no footer */
+}
+
+.footer-logo {
+  display: grid;
+  place-items: center center;
+}
+
+.footer-info {
+  flex: 1;
+  height: 105px;
+  display: grid;
+  place-items: end center;
+  padding-top: 45px;
+  font-weight: bolder;
+}
+
+.footer-info p {
+  margin-left: 30px;
+}
+
+
+/* Container da seção de redes sociais */
+.footer-social {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-direction: column;
+  /* margin: 50px 100px; */
+  text-align: right;
+}
+
+/* Estilos para o título "REDE SOCIAIS" */
+.footer-social h4 {
+  font-size: 16px;
+  margin-left: 5px;
+}
+
+.container-redes-sociais {
+  display: flex;
+}
+
+
+
+@media (max-width: 672px) {
+
+  .footer-info,
   .footer-social {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
-    flex-direction: column;
-    margin: 50px 100px;
-    text-align: right;
+    width: 100%;
+    justify-content: flex-start;
+    margin: 15px;
   }
-
-  
-  /* Estilos para os ícones de redes sociais (coloque as classes ou ícones apropriados) */
-  .footer-social-icon {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  /* Estilos para o título "REDE SOCIAIS" */
-  .footer-social h4 {
-    font-size: 16px;
-   margin-left: 5px;
-  }
-  
-  .container-redes-sociais{
-    display: flex;
-  }
-
-
-  @media (max-width: 672px) {
-    .footer-info, .footer-social{
-      width: 100%;
-      justify-content: flex-start;
-      margin: 15px;
-    }
 }

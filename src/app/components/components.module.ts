@@ -5,6 +5,7 @@ import { MaterialModule } from '../shared/material/material.module';
 import { RouterModule } from '@angular/router';
 import { FooterComponent } from './components/footer/footer.component';
 import { DetailsLocationComponent } from './components/details-location/details-location.component';
+import { BannerContatoComponent } from './components/banner-contato/banner-contato.component';
 
 
 
@@ -12,7 +13,8 @@ import { DetailsLocationComponent } from './components/details-location/details-
   declarations: [
     NavBarComponent,
     FooterComponent,
-    DetailsLocationComponent
+    DetailsLocationComponent,
+    BannerContatoComponent
   ],
   imports: [
     CommonModule,
@@ -22,7 +24,8 @@ import { DetailsLocationComponent } from './components/details-location/details-
   exports: [
     NavBarComponent,
     FooterComponent,
-    DetailsLocationComponent
+    DetailsLocationComponent,
+    BannerContatoComponent
   ]
 })
 export class ComponentsModule { }

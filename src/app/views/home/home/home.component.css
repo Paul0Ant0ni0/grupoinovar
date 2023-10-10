@@ -75,7 +75,7 @@
 }
 
 
-.box-1 .double-width {
+.double-width {
     color: white;
     margin-left: 45%;
     width: 100%;
@@ -181,6 +181,12 @@ letter-spacing: 8px;
     text-align: center;
     font-weight: bolder;
 }
+
+.banner-contato{
+    width: 152%;
+ 
+}
+
 
 @media (max-width: 768px) {
 

@@ -1,0 +1,24 @@
+.container {
+    background-color: #01002F;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.titulo {
+    color: var(--amarelo);
+    font-weight: 700;
+}
+
+.texto {
+    color: white;
+    font-size: small;
+}

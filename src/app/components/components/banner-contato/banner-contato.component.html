@@ -1,0 +1,10 @@
+<div class="container">
+    <div class="box" *ngFor="let itens of itensBenner">
+        <img [src]="itens.img" alt="icones" width="50">
+        <section class="conteudo">
+            <p class="titulo">{{itens.titulo}}</p>
+            <p class="texto">{{itens.texto}}</p>
+        </section>
+    </div>
+    
+</div>

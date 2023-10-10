@@ -28,7 +28,7 @@ export const items: any[] =
             img: "../../../../assets/images/icons/J.png",
             titulo: 'Jardinagem'
         },
-];
+    ];
 
 export const cardServicos: any[] = [
     {
@@ -71,13 +71,13 @@ export const cardServicos: any[] = [
         titulo: "Auxiliar de Zeladoria",
         texto: "Profissionais dedicados na manutenção e organização de nossas instalações no Grupo Inovar, assegurando um ambiente impecável e acolhedor para todos."
     },
-    
+
     {
         img: "../../../../assets/images/servicos/9 - LIMPEZA PREDIAL.jpg",
         titulo: "Limpeza Predial",
         texto: "Nossa equipe especializada garante que cada canto do seu espaço esteja impecável, proporcionando um ambiente higienizado e agradável para todos."
     },
-    
+
     {
         img: "../../../../assets/images/servicos/10 - AUXILIAR DE LIMPEZA.jpg",
         titulo: "Auxiliar de Limpeza",
@@ -105,7 +105,7 @@ export const cardCultura: any[] = [
     }
 ];
 
-export const cardBeneficios: any[] =[
+export const cardBeneficios: any[] = [
     {
         img: '../../../../assets/images/icons/Excelência em Atendimento.svg',
         titulo: 'Excelência em Atendimento',
@@ -150,7 +150,7 @@ export const cardBeneficios: any[] =[
 ];
 
 
-export const faqPerguntas: any[] =[
+export const faqPerguntas: any[] = [
 
     {
         pergunta: '1. Quais são os serviços oferecidos pela Inovar?',
@@ -187,4 +187,30 @@ export const faqPerguntas: any[] =[
 ];
 
 
-export const linkSite: string =  `${window.location.origin}/agradecimento`;
+export const bannerContato: any[] = [
+    {
+        img: '../../../../assets/images/icons/banner-contato/support.png',
+        titulo: 'SUPORTE 11 94031-5672',
+        texto: 'Entre em contato com a nossa Central de Atendimento'
+    },
+    {
+        img: '../../../../assets/images/icons/banner-contato/contact us.png',
+        titulo: 'FALE CONOSCO',
+        texto: 'Envie uma mensagem ou sugestões para o Grupo INOVAR'
+    },
+    {
+        img: '../../../../assets/images/icons/banner-contato/whatsapp.png',
+        titulo: 'WHATSAPP 11 91779-1552',
+        texto: 'Fale com o Grupo INOVAR pelo aplicativo WhatsApp'
+    },
+    {
+        img: '../../../../assets/images/icons/banner-contato/budget.png',
+        titulo: 'FAÇA UMA COTAÇÃO',
+        texto: 'Entre em contato com nossos consultores para mais informações'
+    }
+]
+
+
+
+
+export const linkSite: string = `${window.location.origin}/agradecimento`;
