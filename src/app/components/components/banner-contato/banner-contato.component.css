@@ -4,9 +4,11 @@
     display: flex;
     justify-content: space-between;
     gap: 25px;
+    margin: 0;
 }
 
 .box {
+    width: 25%;
     display: flex;
     justify-content: space-between;
     align-items: center;

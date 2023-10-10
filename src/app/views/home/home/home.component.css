@@ -182,9 +182,16 @@ letter-spacing: 8px;
     font-weight: bolder;
 }
 
-.banner-contato{
-    width: 152%;
+.box-4{
+    width: 100%;
+    background-color: #01002F;
+    display: grid;
+    place-items: center;
  
+}
+
+app-banner-contato{
+    width: 1250px;
 }
 
 
