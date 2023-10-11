@@ -75,11 +75,13 @@ h2 {
     width: clamp(90px, 15%, 450px);
     height: 90px;
     margin: 35px auto;
+    object-fit: cover;
 }
 
 .img-card-servicos {
     width: clamp(180px, 100%, 850px);
     height: 250px;
+    object-fit: cover;
 
 }
 
@@ -93,9 +95,15 @@ h2 {
 }
 
 .titulo-amarelo {
-    color: var(--amarelo);
     width: 55%;
+    background: var(--amarelo);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    color: transparent;
+   
 }
+
 
 .titulo {
     text-align: left;
@@ -178,11 +186,11 @@ h2 {
     margin: 4% 0;
     text-align: center;
     letter-spacing: 8px;
-    color: red;
+    color: var(--amarelo);
 }
 
 .titulo-card {
-    color: var(--azul-claro);
+    color: var(--azul);
     text-transform: uppercase;
     font-weight: bolder;
     margin: 10px 0;

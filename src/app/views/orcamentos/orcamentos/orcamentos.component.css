@@ -1,7 +1,3 @@
-main {
-    
-}
-
 .destaque-superior {
     width: 100%;
     height: 450px;
@@ -38,4 +34,68 @@ main {
 
 .formulario-contato mat-tab-group form {
     padding: 25px;
+}
+
+
+.container-beneficios {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.card-beneficios {
+    background-image: linear-gradient(to bottom, var(--azul), var(--azul));
+    background-size: 100% 0;
+    /* O gradiente começa sem altura (0) */
+    background-repeat: no-repeat;
+    transition: background-size 0.3s ease;
+    /* Adiciona uma transição suave à animação */
+    width: clamp(250px, 30%, 320px);
+    height: 23rem;
+    margin: 10px 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    transition: background-size 0.5s ease;
+    border-top: 2px solid var(--azul);
+    border-bottom: 2px solid var(--azul);
+}
+
+.card-beneficios img {
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+.card-beneficios:hover {
+    background-image: linear-gradient(to bottom, var(--azul), var(--azul));
+    background-size: 100% 100%;
+    /* O gradiente cobre todo o fundo de cima para baixo durante o hover */
+    color: white;
+}
+
+
+.titulo-meio {
+    margin: 4% 0;
+    text-align: center;
+    letter-spacing: 8px;
+    
+}
+
+.banner-meio {
+    background-image: url('../../../../assets/images/bg-meio-orcamento.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    padding: 85px;
+    
+}
+
+.titulo{
+    text-align: right;
 }

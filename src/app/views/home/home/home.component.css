@@ -47,10 +47,10 @@
 
 }
 
-.box-1{
+.box-1 {
     background-image: url('../../../../assets/images/bg-home-superior.jpg');
     background-repeat: no-repeat;
-    background-size:100% 100%;
+    background-size: 100% 100%;
     background-position: center center;
     width: 100%;
     height: clamp(350px, calc(65% - 150px), 650px);
@@ -61,7 +61,7 @@
     align-items: center;
 }
 
-.box-3{
+.box-3 {
     background-image: url('../../../../assets/images/bg-home-inferior.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -80,11 +80,16 @@
     margin-left: 45%;
     width: 100%;
     padding: 8px;
-   
+
 }
 
 .titulo-amarelo {
-    color: var(--amarelo);
+    background: var(--amarelo);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    color: transparent;
+   
 }
 
 .titulo {
@@ -92,7 +97,7 @@
     font-weight: 700;
 }
 
-.texto{
+.texto {
     width: 70%;
     text-align: left;
 }
@@ -103,15 +108,19 @@
     text-align: center;
 }
 
-.titulo-inferior{
-    margin:  4% 0;
+.titulo-inferior {
+    margin: 4% 0;
     text-align: center;
-letter-spacing: 8px;
-    color: var(--verde);
+    letter-spacing: 8px;
+    background: var(--amarelo);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    color: transparent;
 }
 
 
-.titulo-inferior h3{
+.titulo-inferior h3 {
     font-weight: 700;
 }
 
@@ -138,7 +147,7 @@ letter-spacing: 8px;
     transition: transform 0.3s ease, opacity 0.3s ease;
     border: 1px solid rgba(167, 167, 167, 0.127);
     text-align: justify;
-    
+
 }
 
 
@@ -146,20 +155,21 @@ letter-spacing: 8px;
 .img-card {
     width: clamp(180px, 100%, 850px);
     height: 350PX;
-}   
+    object-fit: cover;
+}
 
 
-.titulo-card{
-    color: var(--azul-claro);
+.titulo-card {
+    color: var(--azul);
     text-transform: uppercase;
     font-weight: bolder;
     margin: 10px 0;
 }
 
-.btn-servicos{
+.btn-servicos {
     width: 20%;
     height: 45px;
-    background-color: var(--amarelo);
+    background: var(--amarelo);
     color: white;
     text-decoration: none !important;
     display: grid;
@@ -169,10 +179,15 @@ letter-spacing: 8px;
     border-radius: 7px;
     margin: 65px 0;
 }
-.btn-servicos:hover{
-    background-color: white;
-    color: var(--amarelo);
-    border: 1px solid var(--amarelo);
+
+.btn-servicos:hover {
+    background: white;
+    background: var(--amarelo);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    color: transparent;
+    border: 1px solid #E5AD00;
 }
 
 
@@ -182,12 +197,12 @@ letter-spacing: 8px;
     font-weight: bolder;
 }
 
-.box-4{
+.box-4 {
     width: 100%;
     background-color: #01002F;
     display: grid;
     place-items: center;
- 
+
 }
 
 
@@ -203,21 +218,22 @@ letter-spacing: 8px;
     }
 
     .box-1 {
-    
+
         background-image: url('../../../../assets/images/bg-superior-home-responsivo.png');
         flex-direction: column;
         padding: 0;
     }
+
     .box-3 {
         padding: 10px;
-       
+
     }
 
     .double-width {
         background-color: aqua;
-        
-        
-        
+
+
+
     }
 
 

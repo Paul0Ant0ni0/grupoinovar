@@ -77,6 +77,30 @@
         </mat-tab-group>
     </div>
 
+    <section class="box-1">
+        <section class="titulo-meio">
+            <p>GRUPO INOVAR</p>
+        </section>
+        <div class="banner-meio">
+            <h4 class="titulo">Invista no seu Patrimônio
+                e Garanta sua Conservação Ideal
+            </h4>
+        </div>
+        <div class="container-beneficios">
+            <mat-card class="card-beneficios" *ngFor="let beneficio of beneficios">
+                <mat-card-header>
+                    <img class="img-card" [src]="beneficio.img">
+                </mat-card-header>
+                <mat-card-title>
+                    <p>{{beneficio.titulo}}</p>
+                </mat-card-title>
+                <mat-card-content>
+                    <p> {{beneficio.texto}}</p>
+                </mat-card-content>
+            </mat-card>
+        </div>
+    </section>
+
     <section class="box">
         <app-banner-contato></app-banner-contato>
     </section>

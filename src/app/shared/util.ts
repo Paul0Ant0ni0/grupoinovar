@@ -188,11 +188,11 @@ export const cardBeneficiosOrcamento: any[] = [
 export const faqPerguntas: any[] = [
 
     {
-        pergunta: '1. Quais são os serviços oferecidos pela Inovar?',
+        pergunta: '1. Quais são os serviços oferecidos pela INOVAR?',
         resposta: 'Oferecemos uma ampla gama de serviços, incluindo portaria 24 horas, controlador de acesso, auxiliar de zeladoria, recepcionista, limpeza predial, auxiliar de limpeza, auxiliar de serviços gerais, auxiliar de manutenção, jardinagem e manobrista.'
     },
     {
-        pergunta: '2. Como posso solicitar um orçamento para os serviços da Inovar?',
+        pergunta: '2. Como posso solicitar um orçamento para os serviços da INOVAR?',
         resposta: 'Para solicitar um orçamento personalizado, basta preencher o formulário de contato em nossa página ou entrar em contato conosco por telefone. Nossa equipe entrará em contato com você para discutir suas necessidades e oferecer uma cotação adequada.'
     },
     {
@@ -216,7 +216,7 @@ export const faqPerguntas: any[] = [
         resposta: 'Um estacionamento com manobrista oferece conveniência, segurança e um toque de luxo aos seus clientes. Além disso, ajuda a melhorar a experiência geral de visitantes e clientes, tornando seu negócio mais atraente.'
     },
     {
-        pergunta: '8.  Como posso acompanhar o status dos serviços prestados pela Inovar?',
+        pergunta: '8.  Como posso acompanhar o status dos serviços prestados pela INOVAR?',
         resposta: 'Fornecemos atualizações regulares sobre o progresso dos serviços prestados. Você pode entrar em contato conosco a qualquer momento para obter informações atualizadas sobre o status e a qualidade dos nossos serviços.'
     }
 ];

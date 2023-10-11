@@ -1,105 +1,115 @@
 <app-nav-bar></app-nav-bar>
 <main>
-    <section class="capa">
-        <span>
-            <h2>TRABALHE CONOSCO</h2>
-        </span>
-    </section>
-    <section>
-        <h3>Oportunidades Aguardando Você: Preencha o Formulário!</h3>
-        <p>Faça parte do nosso banco de talentos! Preencha o formulário abaixo e envie seu currículo para se candidatar
-        </p>
-       
-   <form #formulario action="https://formsubmit.co/pauloantonio785@gmail.com" method="POST" enctype="multipart/form-data">
-   <div class="container-cadastro">
-
-       <mat-form-field appearance="outline" class="full-width">
-           <mat-label for="nome">Nome Completo</mat-label>
-           <mat-icon matPrefix>person</mat-icon>
-           <input matInput type="text" name="Nome" placeholder="Ex. Nougat" required>
-       </mat-form-field>
-
-       <mat-form-field class="full-width" appearance="outline">
-           <mat-label>E-mail</mat-label>
-           <mat-icon matPrefix>email</mat-icon>
-           <input matInput type="email" name="E-mail" placeholder="Ex. exemple@exemple.com" required>
-       </mat-form-field>
-
-       <div class="full-width double-width">
-
-           <mat-form-field appearance="outline">
-               <mat-label>Telefone</mat-label>
-               <mat-icon matPrefix>phone</mat-icon>
-               <input matInput type="tel" name="Telefone" placeholder="(DDD) 0000-0000" required>
-           </mat-form-field>
-
-           <mat-form-field appearance="outline">
-               <mat-label>Data de Nascimento</mat-label>
-               <mat-icon matPrefix>event</mat-icon>
-               <input matInput type="date" name="Data Nascimento" placeholder="dd/MM/yyyy" required>
-           </mat-form-field>
-
-       </div>
-
-       <mat-form-field class="full-width" appearance="outline">
-           <mat-label>Pretensão Salarial</mat-label>
-           <mat-icon matPrefix>attach_money</mat-icon>
-           <input matInput type="text" #link name="Pretensão Salarial" placeholder="R$ 1.000,00" required>
-       </mat-form-field>
-
-       <mat-form-field appearance="outline" class="full-width">
-           <mat-label>Cargo Desejado</mat-label>
-           <mat-icon matPrefix>work</mat-icon>
-           <input matInput type="text" name="Cargo" placeholder="Ex. Recepcionista" required>
-       </mat-form-field>
-       <div class="input-group mb-3 border border-dark p-2">
-        <label class="input-group-text" for="inputGroupFile01">Currículo</label>
-        <input type="file" class="form-control" id="inputGroupFile01" name="Currículo"
-            placeholder="Adicione o currículo" accept=".jpg, .jpeg, .png, .pdf" required>
+    <div class="destaque-superior">
+        <h2 class="titulo">Trabalhe Conosco </h2>
     </div>
-       <mat-form-field class="full-width" appearance="outline">
-           <mat-label>Apresentação</mat-label>
-           <mat-icon matPrefix>description</mat-icon>
-           <textarea matInput #input name="Apresentacao" maxlength="1000"
-               placeholder="Ex. Breve apresentação sobre você" required></textarea>
-           <mat-hint align="end">{{input.value.length}}/1000</mat-hint>
-       </mat-form-field>
-  
-       <input type="hidden" name="_next" [value]="url_Agradecimento">
-       <input type="hidden" name="_template" value="table">
-       <input type="hidden" name="_captcha" value="false">
-       <input type="hidden" name="_autoresponse"
-           value="Sua mensagem foi recebida! Responderemos o mais breve possível.">
-
-       <button class="full-width" type="submit" [disabled]="!isFormValid(formulario)" mat-raised-button
-           color="primary">ENVIAR</button>
-
-   </div>
-</form>
-
-
-    </section>
     <section>
-        <img src="../../../../assets/images/icons/trabalhe conosco.png" alt="icone-trabalhe-conosco">
-        <p>Junte-se à Inovar: Referência em serviços para Condomínios Residenciais, Comerciais, Indústrias e mais.
-            Trabalhamos para destacar nossos parceiros e proteger seus ativos
+        <h3>Trabalhe Conosco e faça parte do nosso time</h3>
+        <p>
+            Seja bem vindo! Agora você pode enviar seu currículo pelo site e fazer parte do time de colaboradores do
+            Grupo Inovar. Preencha o formulário abaixo e envie seu currículo para se candidatar.
+            Seu currículo entrará em nosso banco de vagas. Boa Sorte!
+
         </p>
+
+        <form #formulario action="https://formsubmit.co/pauloantonio785@gmail.com" method="POST"
+            enctype="multipart/form-data">
+            <div class="container-cadastro">
+
+                <mat-form-field appearance="outline" class="full-width">
+                    <mat-label for="nome">Nome Completo</mat-label>
+                    <mat-icon matPrefix>person</mat-icon>
+                    <input matInput type="text" name="Nome" placeholder="Ex. Nougat" required>
+                </mat-form-field>
+
+                <mat-form-field class="full-width" appearance="outline">
+                    <mat-label>E-mail</mat-label>
+                    <mat-icon matPrefix>email</mat-icon>
+                    <input matInput type="email" name="E-mail" placeholder="Ex. exemple@exemple.com" required>
+                </mat-form-field>
+
+                <div class="full-width double-width">
+
+                    <mat-form-field appearance="outline">
+                        <mat-label>Telefone</mat-label>
+                        <mat-icon matPrefix>phone</mat-icon>
+                        <input matInput type="tel" name="Telefone" placeholder="(DDD) 0000-0000" required>
+                    </mat-form-field>
+
+                    <mat-form-field appearance="outline">
+                        <mat-label>Data de Nascimento</mat-label>
+                        <mat-icon matPrefix>event</mat-icon>
+                        <input matInput type="date" name="Data Nascimento" placeholder="dd/MM/yyyy" required>
+                    </mat-form-field>
+
+                </div>
+
+                <mat-form-field class="full-width" appearance="outline">
+                    <mat-label>Pretensão Salarial</mat-label>
+                    <mat-icon matPrefix>attach_money</mat-icon>
+                    <input matInput type="text" #link name="Pretensão Salarial" placeholder="R$ 1.000,00" required>
+                </mat-form-field>
+
+                <mat-form-field appearance="outline" class="full-width">
+                    <mat-label>Cargo Desejado</mat-label>
+                    <mat-icon matPrefix>work</mat-icon>
+                    <input matInput type="text" name="Cargo" placeholder="Ex. Recepcionista" required>
+                </mat-form-field>
+                <div class="input-group mb-3 border border-dark p-2">
+                    <label class="input-group-text" for="inputGroupFile01">Currículo</label>
+                    <input type="file" class="form-control" id="inputGroupFile01" name="Currículo"
+                        placeholder="Adicione o currículo" accept=".jpg, .jpeg, .png, .pdf" required>
+                </div>
+                <mat-form-field class="full-width" appearance="outline">
+                    <mat-label>Apresentação</mat-label>
+                    <mat-icon matPrefix>description</mat-icon>
+                    <textarea matInput #input name="Apresentacao" maxlength="1000"
+                        placeholder="Ex. Breve apresentação sobre você" required></textarea>
+                    <mat-hint align="end">{{input.value.length}}/1000</mat-hint>
+                </mat-form-field>
+
+                <input type="hidden" name="_next" [value]="url_Agradecimento">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_autoresponse"
+                    value="Sua mensagem foi recebida! Responderemos o mais breve possível.">
+
+                <button class="full-width" type="submit" [disabled]="!isFormValid(formulario)" mat-raised-button
+                    color="primary">ENVIAR</button>
+
+            </div>
+        </form>
+
+
     </section>
+
+
+    <div class="banner-meio">
+        <h4 class="titulo">
+            Junte-se ao Grupo Inovar
+        </h4>
+        <p class="texto-amarelo">
+            Trabalhamos para destacar nossos parceiros e proteger seus ativos.
+
+        </p>
+    </div>
 
     <section class="box-2">
         <div class="container">
-          <mat-card class="card" *ngFor="let card of cardCultura">
-            <mat-card-header>
-              <img class="img-card" [src]="card.img">
-            </mat-card-header>
-            <mat-card-title>{{card.titulo}}</mat-card-title>
-            <mat-card-content>
-              <p> {{card.texto}}</p>
-            </mat-card-content>
-          </mat-card>
+            <mat-card class="card" *ngFor="let card of cardCultura">
+                <mat-card-header>
+                    <img class="img-card" [src]="card.img">
+                </mat-card-header>
+                <mat-card-title>{{card.titulo}}</mat-card-title>
+                <mat-card-content>
+                    <p> {{card.texto}}</p>
+                </mat-card-content>
+            </mat-card>
         </div>
-      </section>
-
+    </section>
+    <section class="box">
+        <app-banner-contato></app-banner-contato>
+    </section>
 </main>
 
 

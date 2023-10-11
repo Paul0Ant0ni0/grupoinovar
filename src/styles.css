@@ -10,7 +10,7 @@
     --azul: #010080;
     --azul-claro: rgb(0, 176, 240);
     --cinza: #E8E5F6;
-    --amarelo: #FCC00A;
+    --amarelo: linear-gradient(180deg, rgba(179,127,0,1) 0%, rgba(250,191,9,1) 100%);
     --verde: rgb(0, 176, 80)
 }
 html, body {width: 100%; height: auto;}

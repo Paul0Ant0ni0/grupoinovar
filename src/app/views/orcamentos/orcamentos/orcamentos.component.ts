@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { cardBeneficiosServicos, linkSite, opcoesServicos } from 'src/app/shared/util';
+import { cardBeneficiosOrcamento, cardBeneficiosServicos, linkSite, opcoesServicos } from 'src/app/shared/util';
 
 @Component({
   selector: 'app-orcamentos',
@@ -8,6 +8,8 @@ import { cardBeneficiosServicos, linkSite, opcoesServicos } from 'src/app/shared
 })
 export class OrcamentosComponent {
 
+
+  public beneficios!: any[];
   public url_Agradecimento: string = linkSite;
   public servicos!: any[];
   public cardBeneficios!: any[];
@@ -15,7 +17,7 @@ export class OrcamentosComponent {
   constructor(
     
   ) {
-
+    this.beneficios = cardBeneficiosOrcamento;
     this.cardBeneficios = cardBeneficiosServicos;
     this.opcoesServicos = opcoesServicos;
   

@@ -23,14 +23,27 @@ header {
   height: 55%;
   padding: 0 35px;
   display: flex;
-  justify-content: space-between;
+  justify-content:space-around;
   align-items: center;
 }
-.container-link{
+.container-link, .container-link-lateral{
   margin: 0 auto;
 }
 
-.container-link, .container-contato {
+.container-contato{
+  flex: 2;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+
+}
+
+
+.container-contato span{
+  text-align: center;
+}
+
+.container-link, .container-link-lateral {
   
   display: flex;
   justify-content: space-between;
@@ -43,14 +56,14 @@ header {
   cursor: pointer;
 }
 
-.container-link a {
+.container-link a, .container-link-lateral a {
   font-size: 1.5rem;
   font-family: Arial, Helvetica, sans-serif;
   transition: color 0.3s;
 }
 
 
-.container-link .btn-orcamento {
+.container-link-lateral .btn-orcamento {
   color: white;
   background-color:  var(--azul);
   border-radius: 50px;
@@ -59,28 +72,26 @@ header {
 }
 
 /* Estilos para ícones e links dentro do container de contato */
-.container-contato span, .container-link a {
+.container-contato span, .container-link a, .container-link-lateral a {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0 8px;
 }
 
-.container-contato span mat-icon {
-  font-size: 20px;
-}
 
-.container-link a{
+
+.container-link a, .container-link-lateral a{
   color:gray;
 }
 
 /* Estilos para links quando hover ou ativos */
-.container-link a:hover,
-.container-link a:active{
+.container-link a:hover, .container-link-lateral a:hover,
+.container-link a:active, .container-link-lateral a:active{
   color: var(--amarelo);
 }
 
-.container-link .btn-orcamento:hover {
+.container-link-lateral .btn-orcamento:hover {
   color: var(--azul);
   background-color: white;
   border: 1px solid var(--azul);
@@ -112,13 +123,13 @@ header {
 
   
 
-  .container-link, .container-contato {
+  .container-link, .container-link-lateral,.container-contato {
     width: 100%;
     flex-direction: column;
     align-items: center;
   }
 
-  .container-link a {
+  .container-link a, .container-link-lateral a {
     margin-bottom: 10px;
   }
 }
