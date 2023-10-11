@@ -24,6 +24,19 @@
 }
 
 
+.texto-superior{
+    margin: 0 auto;
+    width: 68%;
+    padding: 45px;
+    text-align: center;
+}
+
+
+.texto-superior, .formulario-contato{
+    display: grid;
+    place-items: center;
+}
+
 .formulario-contato mat-tab-group {
     width: 85%;
     height: auto;
@@ -63,6 +76,7 @@
     transition: background-size 0.5s ease;
     border-top: 2px solid var(--azul);
     border-bottom: 2px solid var(--azul);
+    padding: 20px;
 }
 
 .card-beneficios img {
@@ -76,6 +90,12 @@
     background-size: 100% 100%;
     /* O gradiente cobre todo o fundo de cima para baixo durante o hover */
     color: white;
+}
+
+.card-beneficios mat-card-title{
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--azul);
 }
 
 

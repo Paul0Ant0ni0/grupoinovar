@@ -18,7 +18,7 @@ const routes: Routes =
       path: 'contato',
       loadChildren: () =>
         import('./views/contato/contato.module').then(m => m.ContatoModule),
-      title: 'Contato/Orçamento'
+      title: 'Contato'
     },
     {
       path: 'trabalhe-conosco',
@@ -32,13 +32,24 @@ const routes: Routes =
         import('./views/servicos/servicos.module').then(m => m.ServicosModule),
       title: 'Serviços'
     },
-    { path: 'agradecimento', 
-      loadChildren: () => 
-      import('./views/agradecimento/agradecimento.module').then(m => m.AgradecimentoModule),
+    {
+      path: 'agradecimento',
+      loadChildren: () =>
+        import('./views/agradecimento/agradecimento.module').then(m => m.AgradecimentoModule),
       title: 'Agradecimento'
-     },
-  { path: 'quem-somos', loadChildren: () => import('./views/quem-somos/quem-somos.module').then(m => m.QuemSomosModule) },
-  { path: 'orcamentos', loadChildren: () => import('./views/orcamentos/orcamentos.module').then(m => m.OrcamentosModule) }
+    },
+    {
+      path: 'quem-somos',
+      loadChildren: () =>
+        import('./views/quem-somos/quem-somos.module').then(m => m.QuemSomosModule),
+      title: 'Quem Somos'
+    },
+    {
+      path: 'orcamentos',
+      loadChildren: () =>
+        import('./views/orcamentos/orcamentos.module').then(m => m.OrcamentosModule),
+      title: 'Orçamentos'
+    }
   ];
 
 @NgModule({
