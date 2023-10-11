@@ -1,5 +1,5 @@
 import { Component} from '@angular/core';
-import { cardServicos, linkSite } from 'src/app/shared/util';
+import { cardBeneficiosServicos, cardServicos, linkSite, opcoesServicos } from 'src/app/shared/util';
 
 
 
@@ -11,23 +11,14 @@ import { cardServicos, linkSite } from 'src/app/shared/util';
 export class ServicosComponent {
   public url_Agradecimento: string = linkSite;
   public servicos!: any[];
-  public opcoesServicos: string[] = [
-    'Portaria 24 horas',
-    'Controlador de acesso',
-    'Auxiliar de zeladoria',
-    'Recepcionista',
-    'Limpeza Predial',
-    'Auxiliar de Limpeza',
-    'Auxiliar de Serviços Gerais',
-    'Auxiliar de manutenção',
-    'Jardinagem',
-    'Manobrista'
-  ];
-
+  public cardBeneficios!: any[];
+  public opcoesServicos!: string[];
   constructor(
     
   ) {
     this.servicos = cardServicos;
+    this.cardBeneficios = cardBeneficiosServicos;
+    this.opcoesServicos = opcoesServicos;
   }
 
  

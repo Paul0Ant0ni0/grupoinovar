@@ -34,7 +34,7 @@ export const cardServicos: any[] = [
     {
         img: "../../../../assets/images/servicos/1 - JARDINAGEM.jpg",
         titulo: "Jardinagem",
-        texto: "Oferecemos um paisagismo primoroso que valoriza o ambiente e promove o bem-estar de todos que o frequentam. Seu espaço, nossa expertise"
+        texto: "Oferecemos um paisagismo primoroso que valoriza o ambiente e promove o bem-estar de todos que o frequentam. Seu espaço, nossa expertise."
     },
     {
         img: "../../../../assets/images/servicos/2 - MANUTENÇÃO.jpg",
@@ -44,7 +44,7 @@ export const cardServicos: any[] = [
     {
         img: "../../../../assets/images/servicos/3 - MANOBRISTA.jpg",
         titulo: "Manobrista",
-        texto: "Destaque-se da concorrência com nosso serviço de estacionamento com manobrista. A excelência que você merece para seu negócio"
+        texto: "Destaque-se da concorrência com nosso serviço de estacionamento com manobrista. A excelência que você merece para seu negócio."
     },
     {
         img: "../../../../assets/images/servicos/4 - RECEPCIONISTA.jpg",
@@ -105,7 +105,42 @@ export const cardCultura: any[] = [
     }
 ];
 
-export const cardBeneficios: any[] = [
+
+export const cardBeneficiosServicos: any[] = [
+    {
+        img: '../../../../assets/images/icons/icones-beneficios/experience.png',
+        titulo: 'Expertise Especializada:',
+        texto: 'Ao escolher o Grupo Inovar para terceirizar seus serviços, você está obtendo acesso instantâneo a uma equipe de profissionais altamente treinados e especializados em diversas áreas.'
+    },
+    {
+        img: '../../../../assets/images/icons/icones-beneficios/Financial Economy.png',
+        titulo: 'Redução de Custos:',
+        texto: 'A terceirização pode significar economias substanciais para sua empresa. Evite despesas com contratação, treinamento e infraestrutura, enquanto mantém um alto padrão de qualidade nos serviços prestados pelo Grupo Inovar. '
+    },
+    {
+        img: '../../../../assets/images/icons/icones-beneficios/target.png',
+        titulo: 'Foco no Core Business:',
+        texto: 'Deixe as operações conosco e concentre-se nas atividades centrais do seu negócio.'
+    },
+    {
+        img: '../../../../assets/images/icons/icones-beneficios/provision.png',
+        titulo: 'Flexibilidade:',
+        texto: 'Oferecemos flexibilidade para se ajustar às mudanças do mercado. '
+    },
+    {
+        img: '../../../../assets/images/icons/icones-beneficios/premium-badge.png',
+        titulo: 'Qualidade Garantida:',
+        texto: 'No Grupo Inovar, a qualidade é nossa prioridade. Implementamos rigorosos padrões de controle de qualidade para garantir que todos os serviços prestados atendam e superem as expectativas, fortalecendo a reputação da sua empresa.'
+    },
+    {
+        img: '../../../../assets/images/icons/icones-beneficios/costumer.png',
+        titulo: 'Concentre-se no Cliente:',
+        texto: 'Ganhe mais tempo e recursos para criar relacionamentos sólidos e satisfação do cliente.'
+    },
+];
+
+
+export const cardBeneficiosOrcamento: any[] = [
     {
         img: '../../../../assets/images/icons/Excelência em Atendimento.svg',
         titulo: 'Excelência em Atendimento',
@@ -190,7 +225,7 @@ export const faqPerguntas: any[] = [
 export const bannerContato: any[] = [
     {
         img: '../../../../assets/images/icons/banner-contato/support.png',
-        titulo: 'SUPORTE 11 94031-5672',
+        titulo: 'SUPORTE (11) 94031-5672',
         texto: 'Entre em contato com a nossa Central de Atendimento'
     },
     {
@@ -200,7 +235,7 @@ export const bannerContato: any[] = [
     },
     {
         img: '../../../../assets/images/icons/banner-contato/whatsapp.png',
-        titulo: 'WHATSAPP 11 91779-1552',
+        titulo: 'WHATSAPP (11) 91779-1552',
         texto: 'Fale com o Grupo INOVAR pelo aplicativo WhatsApp'
     },
     {
@@ -210,6 +245,19 @@ export const bannerContato: any[] = [
     }
 ]
 
+
+export const opcoesServicos: string[] = [
+    'Portaria 24 horas',
+    'Controlador de acesso',
+    'Auxiliar de zeladoria',
+    'Recepcionista',
+    'Limpeza Predial',
+    'Auxiliar de Limpeza',
+    'Auxiliar de Serviços Gerais',
+    'Auxiliar de manutenção',
+    'Jardinagem',
+    'Manobrista'
+  ];
 
 
 

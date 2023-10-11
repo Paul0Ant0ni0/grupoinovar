@@ -1,11 +1,37 @@
-.box-1, .box-2, .box-3, .formulario-contato {
+.destaque-superior{
+    width: 100%;
+    height: 450px;
+    background-image: url('../../../../assets/images/bg-superior-servicos.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    place-items: center;
+}
+
+.titulo{
+    color: white;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 700;
+}
+.box-1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box-2, .box-3, .formulario-contato {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 15px;
     margin-top: 8%;
+}
+
+.box-2, .formulario-contato {
+    padding: 15px;
 }
 
 h2 {
@@ -18,7 +44,8 @@ h2 {
     color: white;
 }
 
-.box-1 p, .box-3 p, .formulario-contato p {
+
+.formulario-contato p {
     width: 85%;
     text-align: justify;
     margin: 2% 0;
@@ -26,29 +53,86 @@ h2 {
 
 .box-2{
     background-color: var(--azul);
-   
+ 
 }
 
-.img-card {
+.box-4{
+    width: 100%;
+    background-color: #01002F;
+    display: grid;
+    place-items: center;
+    margin: 35px 0;
+ 
+}
+
+
+
+.img-card-beneficios {
+    width: clamp(90px, 15%, 450px);
+    height: 90px;
+    margin: 35px auto;
+}
+
+.img-card-servicos {
     width: clamp(180px, 100%, 850px);
+    height: 250px;
 
 }
 
-.formulario-contato {
-    box-shadow: 2px 8px 8px rgba(144, 144, 144, 0.34);
-    border: 1px solid black;
+.banner-inferior{
+    height: 25rem;
+    background-image: url('../../../../assets/images/bg-inferior-servicos.jpg');
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    background-position: center center;
+    padding: 4rem;
 }
 
-.formulario-contato form {
-    width: 75%;
+.titulo-amarelo {
+    color: var(--amarelo);
+    width: 55%;
 }
+
+.titulo {
+    text-align: left;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.texto{
+    width: 55%;
+    text-align: left;
+    font-size: 15px;
+    color: white;
+}
+
+
+.formulario-contato mat-tab-group{
+    width: 85%;
+    height: auto;
+    padding: 15px;
+
+}
+
+
+.formulario-contato mat-tab-group  form{
+    padding: 25px;
+}
+
 
 .double-width mat-form-field {
     width: calc(50% - 5px); 
     margin-right: 5px; 
 }
 
-.container-servicos {
+.container-beneficios{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+ .container-servicos {
     width: 95%;
     display: flex;
     justify-content: space-evenly;
@@ -56,72 +140,50 @@ h2 {
     flex-wrap: wrap;
 }
 
-.card-servicos {
-    box-shadow: none;
-    width: clamp(250px, 50%, 350px);
-    height: 25rem;
+.card-beneficios{
+    width: clamp(75px, 15%, 250px);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+    text-align: center;
+    box-shadow: none;
+    font-size: 13px;
+}
+
+.card-servicos {
+    box-shadow: none;
+    width: clamp(150px,35%, 250px);
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     margin-top: 15px;
     transition: transform 0.3s ease, opacity 0.3s ease;
     border: 1px solid rgba(167, 167, 167, 0.127);
     text-align: justify;
-    filter: hue-rotate(13deg) saturate(23%) contrast(102%);
-    -webkit-filter: hue-rotate(13deg) saturate(23%) contrast(102%);
-    -moz-filter: hue-rotate(13deg) saturate(23%) contrast(102%);
+
+
 }
 
 .responsivo {
     display: none;
 }
-.card-servicos:hover {
-    border: 1px solid var(--azul);
-    box-shadow: 1px 0px 13px -2px rgba(1, 0, 128, 0.31);
-    transform: scale(1.05);
-    /* Aumenta o tamanho do card em 5% quando o mouse passa sobre ele */
-    opacity: 0.9;
-    /* Reduz ligeiramente a opacidade do card ao passar o mouse sobre ele */
-    filter: brightness(98%) hue-rotate(13deg) contrast(148%);
-    -webkit-filter: brightness(98%) hue-rotate(13deg) contrast(148%);
-    -moz-filter: brightness(98%) hue-rotate(13deg) contrast(148%);
-    transition: 1s;
-}
 
-
-.botao {
-    width: 100%;
-    height: 3rem;
-    padding: 10px;
-    margin-bottom: 35px;
-    visibility: hidden;
-    border: 1px solid var(--azul);
-    color: #010080;
-    background-color: white;
+.titulo-inferior{
+    margin:  4% 0;
     text-align: center;
-    font-family: Inter;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+letter-spacing: 8px;
+    color: red;
 }
 
-.card-servicos:hover .botao {
-    visibility: visible;
-
+.titulo-card{
+    color: var(--azul-claro);
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin: 10px 0;
 }
 
-.botao:hover {
-    background-color: var(--azul);
-    color: white;
-    box-shadow: -1px 7px 50px 4px rgba(1, 0, 128, 0.31)
-}
-
-.botao:active {
-    scale: 0.7;
-    transition: 0.6s;
-}
 
 
 swiper-container {

@@ -7,9 +7,8 @@
   justify-content: space-between;
   align-items: center;
   padding: 25px;
-  background-color: black;
   /* Cor de fundo do footer */
-  color: white;
+  color:#181818;
   /* Cor do texto no footer */
 }
 
@@ -23,7 +22,7 @@
   height: 105px;
   display: grid;
   place-items: end center;
-  padding-top: 45px;
+  padding-top: 33px;
   font-weight: bolder;
 }
 

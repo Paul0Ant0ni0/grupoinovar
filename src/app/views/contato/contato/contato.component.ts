@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { cardBeneficios, faqPerguntas, linkSite } from 'src/app/shared/util';
+import { cardBeneficiosOrcamento, faqPerguntas, linkSite, opcoesServicos } from 'src/app/shared/util';
 
 @Component({
   selector: 'app-contato',
@@ -10,26 +10,15 @@ export class ContatoComponent {
   public beneficios!: any[];
   public panelOpenState: boolean = false;
   public faqs!: any[];
-  public opcoesServicos: string[] = [
-    'Portaria 24 horas',
-    'Controlador de acesso',
-    'Auxiliar de zeladoria',
-    'Recepcionista',
-    'Limpeza Predial',
-    'Auxiliar de Limpeza',
-    'Auxiliar de Serviços Gerais',
-    'Auxiliar de manutenção',
-    'Jardinagem',
-    'Manobrista'
-  ];
+ public opcoesServicos!: string[];
   public url_Agradecimento: string = linkSite;
 
   constructor(
 
   ) {
-    this.beneficios = cardBeneficios;
+    this.beneficios = cardBeneficiosOrcamento;
     this.faqs = faqPerguntas;
-  
+    this.opcoesServicos = opcoesServicos;
   }
 
   
