@@ -1,0 +1,85 @@
+<app-nav-bar></app-nav-bar>
+
+<main>
+    <div class="destaque-superior">
+        <h2 class="titulo">Peça seu Orçamento</h2>
+    </div>
+    <h4>
+        No mundo empresarial competitivo de hoje, a terceirização de serviços se tornou uma estratégia essencial para
+        alcançar eficiência e sucesso.
+    </h4>
+    <p>
+
+        Solicite agora mesmo um orçamento personalizado com o Grupo Inovar e descubra
+        como podemos aprimorar a segurança em seu ambiente, de acordo com as suas conveniências.
+
+    </p>
+
+    <div class="formulario-contato">
+        <mat-tab-group mat-stretch-tabs class="example-stretched-tabs mat-elevation-z4">
+            <mat-tab label="Solicitar Proposta">
+                <form #formulario_2 action="https://formsubmit.co/pauloantonio785@gmail.com" method="POST">
+
+                    <div class="container-cadastro">
+                        <div class="full-width double-width">
+                            <mat-form-field appearance="outline" class="full-width">
+                                <mat-label for="nome">Nome Completo</mat-label>
+                                <input matInput type="text" name="Nome" placeholder="Ex. Nougat" required>
+                            </mat-form-field>
+                            <mat-form-field class="full-width" appearance="outline">
+                                <mat-label>Nome do Condomínio/Empresa </mat-label>
+                                <input matInput type="text" name="Nome do Condomínio/Empresa"
+                                    placeholder="Ex. Exemplo LTDA" required>
+                            </mat-form-field>
+                        </div>
+                        <div class="full-width double-width">
+                            <mat-form-field class="full-width" appearance="outline">
+                                <mat-label>Email</mat-label>
+                                <input matInput type="email" name="E-mail" placeholder="E. exemple@exemple.com.br"
+                                    required>
+                            </mat-form-field>
+                            <mat-form-field class="full-width" appearance="outline">
+                                <mat-label>Quantas unidades possui o condomínio ?</mat-label>
+                                <input matInput type="number" name="Unidades do condomínio" placeholder="Ex. 5"
+                                    required>
+                            </mat-form-field>
+                        </div>
+                        <div class="full-width double-width">
+                            <mat-form-field class="full-width" appearance="outline">
+                                <mat-label>Telefone</mat-label>
+                                <input matInput type="tel" name="Telefone" placeholder="Ex. (DDD) 0000-0000" required>
+                            </mat-form-field>
+                            <input type="hidden" name="Serviço_de-Interesse" [value]="servico.value">
+                            <mat-form-field class="full-width" appearance="outline">
+                                <mat-label>Serviços de interesse:</mat-label>
+                                <mat-select type="text" #servico name="Serviço_de-Interesse"
+                                    placeholder="Ex. Manobrista" required multiple="true">
+                                    <mat-option *ngFor="let serv of opcoesServicos" [value]="serv">{{serv}}</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+                        <mat-form-field class="full-width" appearance="outline">
+                            <mat-label>Mensagem</mat-label>
+                            <textarea matInput #input name="Mensagem" maxlength="1000"
+                                placeholder="Ex. Breve mensagem..." required></textarea>
+                            <mat-hint align="end">{{input.value.length}}/1000</mat-hint>
+                        </mat-form-field>
+                        <input type="hidden" name="_next" [value]="url_Agradecimento">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_autoresponse"
+                            value="Sua mensagem foi recebida! Responderemos o mais breve possível.">
+                        <button class="full-width" type="submit" [disabled]="!isFormValid(formulario_2)"
+                            mat-raised-button color="primary">ENVIAR</button>
+                    </div>
+                </form>
+            </mat-tab>
+        </mat-tab-group>
+    </div>
+
+    <section class="box">
+        <app-banner-contato></app-banner-contato>
+    </section>
+</main>
+
+<app-footer></app-footer>

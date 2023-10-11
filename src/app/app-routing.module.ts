@@ -36,7 +36,9 @@ const routes: Routes =
       loadChildren: () => 
       import('./views/agradecimento/agradecimento.module').then(m => m.AgradecimentoModule),
       title: 'Agradecimento'
-     }
+     },
+  { path: 'quem-somos', loadChildren: () => import('./views/quem-somos/quem-somos.module').then(m => m.QuemSomosModule) },
+  { path: 'orcamentos', loadChildren: () => import('./views/orcamentos/orcamentos.module').then(m => m.OrcamentosModule) }
   ];
 
 @NgModule({

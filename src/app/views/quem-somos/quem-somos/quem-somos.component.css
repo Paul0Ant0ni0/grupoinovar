@@ -1,0 +1,73 @@
+.destaque-superior {
+    width: 100%;
+    height: 450px;
+    background-image: url('../../../../assets/images/bg-superior-servicos.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    place-items: center;
+}
+
+.titulo {
+    color: white;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.titulo-inferior{
+    width: 55%;
+    color: white;
+    font-size: 2rem;
+    text-align: left;
+    font-weight: 700;
+}
+
+.nome-instituicao {
+    margin: 4% 0;
+    text-align: center;
+    letter-spacing: 8px;
+    font-weight: 400;
+}
+
+
+.container-servicos {
+    height: 5rem;
+    background-color: #010031;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.item {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.texto {
+    margin: 45px;
+   text-align: justify;
+}
+
+.box{
+    width: 100%;
+    background-color: #01002F;
+    display: grid;
+    place-items: center;
+ 
+}
+
+.destaque-inferior{
+    width: 100%;
+    height: 450px;
+    background-image: url('../../../../assets/images/bg-inferior-quem-somos.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: grid;
+    place-items: start;
+    padding-left: 45px ;
+    padding-top: 75px;
+}

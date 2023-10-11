@@ -1,0 +1,62 @@
+<app-nav-bar></app-nav-bar>
+
+<main>
+    <div class="destaque-superior">
+        <h2 class="titulo">Quem Somos </h2>
+    </div>
+    <h4 class="nome-instituicao">GRUPO INOVAR</h4>
+    <p class="texto">
+        Com mais de 10 anos de experiência e mais de 500 colaboradores, nossa dedicação é oferecer soluções de serviços
+        excepcionais que transcendem as expectativas.
+        <br><br>
+
+        Somos uma empresa especializada em terceirização de serviços. Oferecemos serviços de alta performance por meio
+        de mão de obra treinada e capacitada, como: porteiros, controladores de acesso e profissionais de limpeza, entre
+        outros.
+        <br><br>
+        Atuamos de forma eficaz em condomínios residenciais e comerciais, indústrias, instituições de ensino,
+        concessionárias, hospitais e empresas de diversos portes e segmentos. Além dos serviços de portaria e limpeza,
+        prestamos ainda serviços qualificados, como:
+
+    </p>
+
+    <div class="container-servicos">
+        <ul *ngFor="let item of itens" class="item">
+            <li>{{item}}</li>
+        </ul>
+    </div>
+    <br><br>
+    <p class="texto">
+        Contamos com uma equipe de profissionais qualificados e capacitados para a realização dos serviços e sempre
+        buscamos superar as expectativas dos nossos clientes.
+         <br><br>
+        Nós fornecemos também, de acordo com a necessidade de cada cliente, o material específico e adequado para a
+        realização das atividades contratadas, o que contribui para a excelência na prestação dos serviços.
+         <br><br>
+        Somos filiados ao Sindicato das empresas de asseio e conservação no estado de SP (SINDICO) e nossos funcionários
+        são filiados ao Sindicato dos trabalhadores em empresas de asseio, conservação e limpeza urbana de SP (SIEMACO).
+         <br><br>
+        Nós somos uma empresa devidamente regularizada e especializada na prestação de Serviços Patrimoniais, de
+        Portaria, Zeladoria, Segurança, Limpeza, Manutenção predial e Terceirização de mão de obra em geral. Atuamos em
+        todo o Território Brasileiro e contamos com profissionais altamente qualificados e com grande experiência no
+        setor.
+         <br><br>
+        Nós nos responsabilizamos pela prestação dos serviços, ficando a critério do cliente exigir a retirada daqueles
+        cuja conduta, quer, moral ou profissional seja julgada inconveniente.
+
+    </p>
+    <div class="destaque-inferior">
+        <p class="titulo-inferior">
+            O Grupo Inovar está aqui para mostrar como essa abordagem inteligente
+            pode beneficiar significativamente
+            o seu negócio.
+
+        </p>
+    </div>
+
+    <section class="box">
+        <app-banner-contato></app-banner-contato>
+    </section>
+</main>
+
+<app-footer></app-footer>
