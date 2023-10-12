@@ -8,7 +8,7 @@
   align-items: center;
   padding: 25px;
   /* Cor de fundo do footer */
-  color:#181818;
+  color: #181818;
   /* Cor do texto no footer */
 }
 
@@ -55,10 +55,32 @@
 
 @media (max-width: 672px) {
 
+  .footer-containe {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-logo,
   .footer-info,
-  .footer-social {
+  .footer-social,
+  .container-redes-sociais {
     width: 100%;
-    justify-content: flex-start;
+    justify-content: center;
+    align-items: center;
     margin: 15px;
+
+  }
+
+  .footer-logo {
+    order: 1;
+  }
+
+  .footer-info {
+    order: 3;
+  }
+
+  .footer-social {
+    order: 2;
   }
 }

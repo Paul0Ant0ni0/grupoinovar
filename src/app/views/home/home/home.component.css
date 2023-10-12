@@ -47,6 +47,7 @@
 
 }
 
+
 .box-1 {
     background-image: url('../../../../assets/images/bg-home-superior.jpg');
     background-repeat: no-repeat;
@@ -54,11 +55,11 @@
     background-position: center center;
     object-fit: cover;
     width: 100%;
-    height: clamp(350px, calc(65% - 150px), 650px);
-    padding: 150px;
+    height: auto;
+    padding: 15px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
 }
 
@@ -71,18 +72,24 @@
     padding: 85px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
 }
 
 
-.double-width {
+.box-1 .double-width {
+    height: 35%;
+}
+
+.box-1 .double-width,
+.box-3 .double-width {
+    width: clamp(350px, 50%, 750px);
     color: white;
-    margin-left: 45%;
-    width: 100%;
     padding: 8px;
 
+
 }
+
 
 .titulo-amarelo {
     background: var(--amarelo);
@@ -90,7 +97,7 @@
     -webkit-background-clip: text;
     -moz-background-clip: text;
     color: transparent;
-   
+
 }
 
 .titulo {
@@ -168,7 +175,7 @@
 }
 
 .btn-servicos {
-    width: 20%;
+    width: clamp(250px, 35%, 350px);
     height: 45px;
     background: var(--amarelo);
     color: white;
@@ -221,44 +228,42 @@
     .box-1 {
 
         background-image: url('../../../../assets/images/bg-superior-home-responsivo.png');
+        background-attachment: fixed;
         flex-direction: column;
-        padding: 0;
+        align-items: center;
+        padding: 8px;
     }
 
     .box-3 {
-        padding: 10px;
-
+        flex-direction: column;
+        align-items: center;
+        padding: 8px;
     }
+
 
     .double-width {
-        background-color: aqua;
+        background-color: rgba(0, 0, 0, 0.57);
+        width: 100%;
+        padding: 15px;
 
 
 
     }
 
+    .titulo {
+        font-size: 1.8rem;
+        font-weight: 700;
+    }
+
+    .texto {
+        width: 90%;
+        text-align: left;
+    }
+
+    .texto-centro{
+        width: 75%;
+    }
 
 
 }
 
-@media (max-width: 950px) {
-    .double-width {
-        width: 100%;
-        margin-top: 45px;
-        padding: 25px;
-    }
-}
-
-
-/* @media (max-width: 1206px){
-    .double-width {
-        width: 100%;
-        margin-top: 45px;
-        margin-left: 18%;
-        padding: 10px;
-    }
-    .titulo{
-        color: chartreuse;
-        font-size: 40px;
-    }
-} */
