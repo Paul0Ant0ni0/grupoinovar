@@ -111,11 +111,31 @@
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: auto;
-    padding: 85px;
+    height: 25rem;
+   display: grid;
+   place-items: center end;
     
 }
 
-.titulo{
-    text-align: right;
+.conteudo{
+    width: 55%;
+}
+.banner-meio .titulo{
+    width: 85%;
+    font-size: 2.8rem;
+    text-align: left;
+}
+
+@media (max-width: 902px){
+    .conteudo{
+        background-color: #00000082;
+        width: 100%;
+        display: grid;
+        place-items: center;
+    }
+
+
+    .banner-meio .titulo{
+        text-align: center;
+    }
 }
