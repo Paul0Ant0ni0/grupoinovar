@@ -48,8 +48,11 @@
       <swiper-slide *ngFor="let servico of servicos">
         <mat-card class="card-servicos">
           <mat-card-header>
-            <img class="img-card" [src]="servico.img">
+            <img class="img-card-servicos" [src]="servico.img">
           </mat-card-header>
+          <mat-card-title>
+            <P class="titulo-card">{{servico.titulo}}</P>
+          </mat-card-title>
           <mat-card-content>
             <p>{{servico.texto}}</p>
           </mat-card-content>

@@ -86,11 +86,12 @@ h2 {
 }
 
 .banner-inferior {
-    height: 25rem;
+    height: auto;
     background-image: url('../../../../assets/images/bg-inferior-servicos.jpg');
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
     background-position: center center;
+    object-fit: cover;
     padding: 4rem;
 }
 
@@ -153,7 +154,7 @@ h2 {
 }
 
 .card-beneficios {
-    width: clamp(75px, 15%, 250px);
+    width: clamp(180px, 15%, 250px);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -208,12 +209,13 @@ swiper-slide {
     background-position: center;
     background-size: cover;
     width: 300px;
-    height: 400px;
+    height: 450px;
 }
 
 swiper-slide .card-servicos {
     display: block;
     width: 100%;
+ 
 }
 
 
@@ -222,15 +224,32 @@ swiper-slide .card-servicos {
         display: none;
     }
 
+    
+
     .responsivo {
         display: block;
     }
-
-    .responsivo mat-card {
-        height: 350px;
+    .responsivo .card-servicos{
+        height: 450px;
     }
+ 
 
     .double-width mat-form-field {
         width: 100%;
     }
+
+
+    .titulo{
+        font-size: 1.8rem;
+    }
+
+    .titulo-card{
+        text-align: center;
+    }
+    
+    .banner-inferior .texto, .banner-inferior .titulo-amarelo{
+        width: 95%;
+    }
+
+
 }
