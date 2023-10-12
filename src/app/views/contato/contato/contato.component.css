@@ -38,15 +38,20 @@ main {
 }
 
 .double-width-1:first-child {
-    width: clamp(150px, 45%, 650px);
+    width: clamp(552px, 45%, 850px);
     height: auto;
     flex-shrink: 0;
     padding: 10px 15px;
     text-align: left;
     display: flex;
     flex-direction: column;
+    gap: 15px;
     flex-wrap: wrap;
     
+}
+
+.map{
+    width: clamp(250px, 100%, 850px);
 }
 
 .double-width-1:nth-child(2) {
@@ -162,6 +167,13 @@ main {
 }
 
 
+span{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 5px;
+}
 
 .box-3 mat-tab-group{
     width: 85%;
@@ -206,15 +218,17 @@ main {
        background-position: -850px;
     }
 
-    .double-width-1:first-child{
-        display: none;
-    }
+  
 
     .double-width  mat-form-field{
         width: 100%;
     }
 
-
-
     
+}
+
+@media (max-width: 557px){
+    .double-width-1:first-child {
+        width: clamp(352px, 100%, 850px);
+    }
 }
