@@ -15,12 +15,14 @@
     font-weight: 700;
 }
 
-.titulo-inferior{
-    width: 55%;
+.titulo-inferior {
+    width: clamp(20px, 65%, 780px);
     color: white;
-    font-size: 2rem;
     text-align: left;
     font-weight: 700;
+    font-size: 3rem;
+
+
 }
 
 .nome-instituicao {
@@ -32,15 +34,18 @@
 
 
 .container-servicos {
+    width: 100%;
     height: 5rem;
     background-color: #010031;
     color: white;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
 }
 
 .item {
+    width: clamp(105px, 10%, 250px);
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -48,26 +53,35 @@
 }
 
 .texto {
-    margin: 45px;
-   text-align: justify;
+    margin: 4% 12%;
+    text-align: justify;
 }
 
-.box{
+.box {
     width: 100%;
     background-color: #01002F;
     display: grid;
     place-items: center;
- 
+
 }
 
-.destaque-inferior{
+.destaque-inferior {
     width: 100%;
-    height: 450px;
+    height: 10rem;
     background-image: url('../../../../assets/images/bg-inferior-quem-somos.jpg');
-    background-size: 100%;
+    background-size: 100% 100%;
+    object-fit: cover;
     background-repeat: no-repeat;
     display: grid;
-    place-items: start;
-    padding-left: 45px ;
-    padding-top: 75px;
+    place-items:  center start;
+    padding-left: 45px;
+    margin-bottom: 5%;
+}
+
+
+
+@media (min-width: 710px){
+    .titulo-inferior{
+        font-size: 25px;
+    }
 }

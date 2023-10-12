@@ -239,6 +239,10 @@ swiper-slide .card-servicos {
     }
 
 
+    .destaque-superior .titulo{
+        font-size: 3rem;
+    }
+
     .titulo{
         font-size: 1.8rem;
     }
