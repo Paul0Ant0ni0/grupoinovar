@@ -34,17 +34,17 @@ export const cardServicos: any[] = [
     {
         img: "../../../../assets/images/servicos/1 - JARDINAGEM.jpg",
         titulo: "Jardinagem",
-        texto: "Oferecemos um paisagismo primoroso que valoriza o ambiente e promove o bem-estar de todos que o frequentam. Seu espaço, nossa expertise."
+        texto: "Oferecemos um paisagismo primoroso que valoriza o ambiente e promove o bem-estar de todos que o frequentam.\nSeu espaço, nossa expertise."
     },
     {
         img: "../../../../assets/images/servicos/2 - MANUTENÇÃO.jpg",
         titulo: "Auxiliar de manutenção",
-        texto: "Planejamento e execução de serviços de manutenção preventiva e corretiva em máquinas, equipamentos e instalações. Garantindo o funcionamento eficiente que seu negócio merece."
+        texto: "Planejamento e execução de serviços de manutenção preventiva e corretiva em máquinas, equipamentos e instalações.\nGarantindo o funcionamento eficiente que seu negócio merece."
     },
     {
         img: "../../../../assets/images/servicos/3 - MANOBRISTA.jpg",
         titulo: "Manobrista",
-        texto: "Destaque-se da concorrência com nosso serviço de estacionamento com manobrista. A excelência que você merece para seu negócio."
+        texto: "Destaque-se da concorrência com nosso serviço de estacionamento com manobrista.\nA excelência que você merece para seu negócio."
     },
     {
         img: "../../../../assets/images/servicos/4 - RECEPCIONISTA.jpg",

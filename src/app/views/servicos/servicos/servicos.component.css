@@ -179,6 +179,10 @@ h2 {
 
 }
 
+.card-servicos p{
+    white-space: pre-wrap;
+}
+
 .responsivo {
     display: none;
 }
@@ -209,7 +213,7 @@ swiper-slide {
     background-position: center;
     background-size: cover;
     width: 300px;
-    height: 450px;
+    height: 500px;
 }
 
 swiper-slide .card-servicos {
@@ -230,8 +234,13 @@ swiper-slide .card-servicos {
         display: block;
     }
     .responsivo .card-servicos{
-        height: 450px;
+        height: 480px;
     }
+
+    .responsivo .card-servicos p{
+        white-space: pre-wrap;
+    }
+    
  
 
     .double-width mat-form-field {
