@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import { DetailsLocationComponent } from '../details-location/details-location.component';
-import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-nav-bar',
@@ -8,17 +6,18 @@ import { MatDialog } from '@angular/material/dialog';
   styleUrls: ['./nav-bar.component.css']
 })
 export class NavBarComponent {
+  public   menuVisivel: boolean = false;
+
   constructor(
-    private dialog: MatDialog,
+ 
   ){
 
   }
 
-  public location(): void{
-    this.dialog.open(DetailsLocationComponent, {// Caixa de dialogo, necessessáio passar o componente é o dados de configurações
-      width: '100%',
-      height: 'auto'
 
-    })
+  public toggleMenu(): void {
+    this.menuVisivel = !this.menuVisivel;
   }
+
+
 }
