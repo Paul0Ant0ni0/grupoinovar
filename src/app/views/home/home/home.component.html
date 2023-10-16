@@ -32,12 +32,12 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-  
+
 
   <section class="servicos-icones">
     <div *ngFor="let item of section">
-      <img class="rotate-animation" [src]="item.img" alt="" width="65">
-      <p>{{item.titulo}}</p>
+      <img class="rotate-animation img-icone" [src]="item.img" alt="icone" [title]="item.titulo">
+      <p class="texto-icone">{{item.titulo}}</p>
     </div>
   </section>
 
@@ -65,9 +65,9 @@
 
     <section class="titulo-inferior">
       <p>GRUPO INOVAR</p>
-      <h3>Serviços de Terceirização      </h3>
+      <h3>Serviços de Terceirização </h3>
     </section>
-  
+
     <section class="box-2">
       <div class="container-servicos">
         <mat-card class="card-servicos" *ngFor="let servico of servicos">
@@ -75,38 +75,57 @@
             <img class="img-card" [src]="servico.img">
           </mat-card-header>
           <mat-card-title>
-            <p class="titulo-card">{{servico.titulo}}</p></mat-card-title>
+            <p class="titulo-card">{{servico.titulo}}
+
+            </p>
+          </mat-card-title>
 
         </mat-card>
+    
       </div>
+      <swiper-container class="mySwiper responsivo" pagination="true" effect="coverflow" grab-cursor="true"
+      centered-slides="true" slides-per-view="auto" coverflow-effect-rotate="50" coverflow-effect-stretch="0"
+      coverflow-effect-depth="100" coverflow-effect-modifier="1" coverflow-effect-slide-shadows="true">
+      <swiper-slide *ngFor="let servico of servicos">
+        <mat-card class="card-servicos">
+          <mat-card-header>
+            <img class="img-card-servicos" [src]="servico.img">
+          </mat-card-header>
+          <mat-card-title>
+            <P class="titulo-card">{{servico.titulo}}</P>
+          </mat-card-title>
+        </mat-card>
+      </swiper-slide>
+
+    </swiper-container>
       <a routerLink="/servicos" class="btn-servicos">OUTROS SERVIÇOS
       </a>
     </section>
-    <p class="texto-centro">O Grupo Inovar é hoje uma das mais tradicionais referências nas áreas de prestação de serviços
+    <p class="texto-centro">
+      O Grupo Inovar é hoje uma das mais tradicionais referências nas áreas de prestação de
+      serviços
       para Condomínios Residenciais, Condomínios Comerciais, Indústrias, Escritórios, Clínicas e outros.
-      <br><br>
-      Através de uma filosofia dinâmica, nosso objetivo é fazer com que nossos parceiros
-      se destaquem em seus serviços.
     </p>
 
     <section class="box-3">
       <div class="double-width">
         <h6 class="titulo">Potencialize seu Foco:</h6>
         <p class="titulo-amarelo">Soluções Sob Medida para Empresas e Condomínios</p>
-        <p class="texto">Concentre-se em suas operações e explore nossas opções personalizadas, seja para empresas ou condomínios,
+        <p class="texto">Concentre-se em suas operações e explore nossas opções personalizadas, seja para empresas ou
+          condomínios,
           para otimizar a eficácia e qualidade dos serviços.</p>
-  
+
       </div>
     </section>
 
     <section class="box-4">
       <app-banner-contato></app-banner-contato>
     </section>
-   
+
   </div>
 
- 
-  
+
+
 
 </main>
 

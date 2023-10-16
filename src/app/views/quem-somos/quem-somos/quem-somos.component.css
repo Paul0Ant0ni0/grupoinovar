@@ -32,29 +32,37 @@
     font-weight: 400;
 }
 
-
-.container-servicos {
+.exterior{
     width: 100%;
-    height: 5rem;
+    height:auto;
     background-color: #010031;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    padding: 10px;
+}
+.container-servicos {
+    height: 100%;
+    width: 83%;
     color: white;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    padding: 15px;
+    justify-content: space-between;
+    align-items: stretch;
+   
+    
 }
 
 .item {
-    width: clamp(105px, 10%, 250px);
-    margin: 0 auto;
+    width: clamp(105px, 10%, 250px);;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .texto {
-    margin: 4% 12%;
+    margin: 4% 9.5%;
     text-align: justify;
 }
 
@@ -83,13 +91,17 @@
 
 @media (max-width: 766px) {
     .destaque-inferior {
-        height: auto;
-        padding: 15px 0;
+        height: clamp(620px, 55%, 960px);
+
     }
+
+   
 
     .conteudo {
         width: 100%;
+        height: 100%;
         background-color: #00000082;
+     
         
     }
 

@@ -6,7 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./nav-bar.component.css']
 })
 export class NavBarComponent {
-  public   menuVisivel: boolean = false;
 
   constructor(
  
@@ -15,9 +14,6 @@ export class NavBarComponent {
   }
 
 
-  public toggleMenu(): void {
-    this.menuVisivel = !this.menuVisivel;
-  }
 
 
 }

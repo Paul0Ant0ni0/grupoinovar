@@ -1,7 +1,7 @@
 <header>
     <section class="header-top">
         <section class="container-contato">
-            <span title="Abrir no aplicativo"><a href="tel:+5511940315672">(11) 94031-5672 / (11) 94034-6312</a></span>
+            <span title="Abrir no aplicativo"><a>(11) 94031-5672 / (11) 94034-6312</a></span>
            
         </section>
 
@@ -27,28 +27,14 @@
             <img src="../../../../assets/images/logo.jpeg" alt="logo" width="100">
         </a>
         
-        <button mat-button (click)="toggleMenu()" class="invisivel"><mat-icon>menu</mat-icon></button>
-        <div class="toggle" [ngClass]="{'visible': menuVisivel}">
-            <span class="container-link">
-                <a routerLink="/home" routerLinkActive="active">Home</a>
-                <a routerLink="/servicos" routerLinkActive="active">Serviços</a>
-                <a routerLink="/quem-somos" routerLinkActive="active">Quem Somos</a>
-                <a routerLink="/contato" routerLinkActive="active">Contato</a>
-                
-            </span>
-            <span class="container-link-lateral">
-                <a routerLink="../trabalhe-conosco"  routerLinkActive="active">Trabalhe Conosco</a>
-                <a routerLink="/orcamentos" class="btn-orcamento">Orçamento</a>
-            </span>
-        </div>
-        <span class="container-link visivel">
+        <span class="container-link">
             <a routerLink="/home" routerLinkActive="active">Home</a>
             <a routerLink="/servicos" routerLinkActive="active">Serviços</a>
             <a routerLink="/quem-somos" routerLinkActive="active">Quem Somos</a>
             <a routerLink="/contato" routerLinkActive="active">Contato</a>
             
         </span>
-        <span class="container-link-lateral visivel">
+        <span class="container-link-lateral">
             <a routerLink="../trabalhe-conosco"  routerLinkActive="active">Trabalhe Conosco</a>
             <a routerLink="/orcamentos" class="btn-orcamento">Orçamento</a>
         </span>

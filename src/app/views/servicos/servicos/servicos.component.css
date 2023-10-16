@@ -89,7 +89,7 @@ h2 {
     height: auto;
     background-image: url('../../../../assets/images/bg-inferior-servicos.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     background-position: center center;
     object-fit: cover;
     padding: 4rem;
@@ -108,7 +108,7 @@ h2 {
 
 .titulo {
     text-align: left;
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 700;
 }
 
@@ -180,6 +180,7 @@ h2 {
 }
 
 .card-servicos p{
+    font-size: 14px;
     white-space: pre-wrap;
 }
 
@@ -191,7 +192,7 @@ h2 {
     margin: 4% 0;
     text-align: center;
     letter-spacing: 8px;
-    color: var(--amarelo);
+    color: white;
 }
 
 .titulo-card {
@@ -264,5 +265,9 @@ swiper-slide .card-servicos {
         width: 95%;
     }
 
+    .container-preto{
+        background-color: #00000082;
+        padding: 10px;
+    }
 
 }

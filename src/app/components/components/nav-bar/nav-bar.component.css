@@ -96,7 +96,9 @@ header {
 
 .container-link a,
 .container-link-lateral a {
-  color: gray;
+  color: #bcbcbc ;
+  font-size: 20px;
+  margin: 0 15px;
 }
 
 /* Estilos para links quando hover ou ativos */
@@ -104,7 +106,7 @@ header {
 .container-link-lateral a:hover,
 .container-link a:active,
 .container-link-lateral a:active {
-  color: var(--amarelo);
+  color:  var(--azul);
 }
 
 .container-link-lateral .btn-orcamento:hover {
@@ -113,34 +115,14 @@ header {
   border: 1px solid var(--azul);
 }
 
-.invisivel {
-  display: none;
-}
 
-.visivel{
-  display: flex;
-}
 
-.toggle {
-  display: none; /* Inicialmente oculto */
-}
-button{
-  display: grid;
-  place-items: center center;
-}
 
-mat-icon {
-  transform: scale(2);
-  color: var(--azul);
-}
+
 
 /* Estilos para telas menores (por exemplo, dispositivos móveis) */
 @media (max-width: 1109px) {
-  .toggle.visible, .invisivel {
-    display: block; /* Visível quando a classe 'visible' é aplicada */
-    margin-bottom: 3%;
-    
-  }
+  
   header {
     height: auto;
   }
@@ -157,9 +139,6 @@ mat-icon {
     align-items: center;
 
   }
-
-
-
 
   .container-link,
   .container-link-lateral,

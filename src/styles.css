@@ -7,9 +7,9 @@
 }
 
 :root {
-    --azul: #010080;
+    --azul: #08067b;
     --azul-claro: rgb(0, 176, 240);
-    --cinza: #E8E5F6;
+    --cinza: #bcbcbc;    ;
     --amarelo: #FBC00B;
     --verde: rgb(0, 176, 80)
 }
@@ -47,13 +47,13 @@ a:link:hover{
 
 .whatsapp-button::before {
     content: 'Olá! Eu sou a Ivone! Como posso te ajudar?';
+    color: #08067b;
     background-color: white;
     padding: 15px;
     border-radius: 8px;
     border: 1px solid var(--amarelo);
-    word-wrap: break-word; /* Quebra o texto em palavras */
+    white-space: pre-wrap;
     font-weight: 600;
-    ;
 }
 
 

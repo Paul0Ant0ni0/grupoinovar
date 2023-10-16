@@ -225,23 +225,27 @@ export const faqPerguntas: any[] = [
 export const bannerContato: any[] = [
     {
         img: '../../../../assets/images/icons/banner-contato/support.png',
-        titulo: 'SUPORTE (11) 94031-5672',
-        texto: 'Entre em contato com a nossa Central de Atendimento'
+        titulo: 'SUPORTE\n(11) 94031-5672',
+        texto: 'Entre em contato com a nossa Central de Atendimento',
+        link: 'tel:+5511940315672'
     },
     {
         img: '../../../../assets/images/icons/banner-contato/contact us.png',
-        titulo: 'FALE CONOSCO',
-        texto: 'Envie uma mensagem ou sugestões para o Grupo INOVAR'
+        titulo: 'FALE\nCONOSCO',
+        texto: 'Envie uma mensagem ou sugestões para o Grupo INOVAR',
+        link: '/contato'
     },
     {
         img: '../../../../assets/images/icons/banner-contato/whatsapp.png',
-        titulo: 'WHATSAPP (11) 91779-1552',
-        texto: 'Fale com o Grupo INOVAR pelo aplicativo WhatsApp'
+        titulo: 'WHATSAPP\n(11) 91779-1552',
+        texto: 'Fale com o Grupo INOVAR pelo aplicativo WhatsApp',
+        link: 'https://api.whatsapp.com/send?phone=5511917791552'
     },
     {
         img: '../../../../assets/images/icons/banner-contato/budget.png',
-        titulo: 'FAÇA UMA COTAÇÃO',
-        texto: 'Entre em contato com nossos consultores para mais informações'
+        titulo: 'FAÇA\nUMA COTAÇÃO',
+        texto: 'Entre em contato com nossos consultores para mais informações',
+        link: '/orcamentos'
     }
 ]
 

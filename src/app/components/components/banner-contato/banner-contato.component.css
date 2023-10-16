@@ -17,12 +17,18 @@
     margin: 0 auto;
 }
 
+.conteudo{
+    text-align: left;
+}
 .titulo {
     color: var(--amarelo);
     font-weight: 700;
+    white-space: pre-wrap;
+  
 }
 
 .texto {
     color: white;
     font-size: small;
+   
 }

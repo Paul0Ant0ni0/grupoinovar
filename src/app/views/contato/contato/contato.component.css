@@ -66,8 +66,9 @@ main {
 .box{
     width: 100%;
     background-color: #01002F;
-    display: grid;
-    place-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
  
 }
 
@@ -136,11 +137,13 @@ main {
     margin: 5% 0;
     color: white;
     outline: 5px solid rgb(255, 255, 255);
+    display: grid;
+    place-items: center center;
 }
 
 
 .box-2 img {
-    width: 8%;
+    width: 15%;
     margin: 15px 0;
 }
 

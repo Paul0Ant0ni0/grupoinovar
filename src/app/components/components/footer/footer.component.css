@@ -18,44 +18,32 @@
 }
 
 .footer-info {
-  flex: 1;
-  height: 105px;
+  flex: 2;
+  height: auto;
   display: grid;
-  place-items: end center;
+  place-items: center center;
   padding-top: 33px;
   font-weight: bolder;
+  padding-right: 10%;
 }
 
 .footer-info p {
-  margin-left: 30px;
+  color: var(--cinza);
+  margin-left: 23px;
 }
 
-
-/* Container da seção de redes sociais */
-.footer-social {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
-  flex-direction: column;
-  /* margin: 50px 100px; */
-  text-align: right;
-}
-
-/* Estilos para o título "REDE SOCIAIS" */
-.footer-social h4 {
-  font-size: 16px;
-  margin-left: 5px;
-}
 
 .container-redes-sociais {
   display: flex;
+  padding-left: 28px;
+  margin-bottom: 15px;
 }
 
 
 
 @media (max-width: 672px) {
 
-  .footer-containe {
+  .footer-container {
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -63,7 +51,6 @@
 
   .footer-logo,
   .footer-info,
-  .footer-social,
   .container-redes-sociais {
     width: 100%;
     justify-content: center;
@@ -76,11 +63,14 @@
     order: 1;
   }
 
+  .container-redes-sociais{
+    padding: 0;
+  }
+
   .footer-info {
+    padding: 0;
     order: 3;
   }
 
-  .footer-social {
-    order: 2;
-  }
+ 
 }

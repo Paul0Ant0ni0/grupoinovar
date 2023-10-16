@@ -2,7 +2,7 @@
     <div class="box" *ngFor="let itens of itensBenner">
         <img [src]="itens.img" alt="icones" width="50">
         <section class="conteudo">
-            <p class="titulo">{{itens.titulo}}</p>
+            <a [href]="itens.link" class="titulo">{{itens.titulo}}</a>
             <p class="texto">{{itens.texto}}</p>
         </section>
     </div>
