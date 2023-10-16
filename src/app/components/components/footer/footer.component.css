@@ -39,7 +39,9 @@
   margin-bottom: 15px;
 }
 
-
+.container-redes-sociais img {
+  margin: 8px;
+}
 
 @media (max-width: 672px) {
 

@@ -26,8 +26,8 @@
 
 .texto-superior{
     margin: 0 auto;
-    width: 68%;
-    padding: 45px;
+    width: clamp(350px, 88%, 1250px);
+    padding: 20px;
     text-align: center;
 }
 
@@ -36,6 +36,8 @@
     display: grid;
     place-items: center;
 }
+
+
 
 .formulario-contato mat-tab-group {
     width: 85%;
@@ -126,6 +128,30 @@
     text-align: left;
 }
 
+.responsivo {
+    display: none;
+}
+
+swiper-container {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 500px;
+}
+
+swiper-slide .card-beneficios {
+    display: block;
+    width: 100%;
+ 
+}
+
+
 @media (max-width: 902px){
     .conteudo{
         background-color: #00000082;
@@ -138,4 +164,24 @@
     .banner-meio .titulo{
         text-align: center;
     }
+}
+
+@media (max-width: 768px){
+    .container-beneficios {
+        display: none;
+    }
+
+
+    .responsivo {
+        display: block;
+    }
+    .responsivo .card-beneficios{
+        height: 480px;
+    }
+
+    .responsivo .card-beneficios p{
+        white-space: pre-wrap;
+    }
+    
+
 }

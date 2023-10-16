@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { cardCultura, items, linkSite } from 'src/app/shared/util';
+import { cardCultura, linkSite } from 'src/app/shared/util';
 
 @Component({
   selector: 'app-trabalhe-conosco',
@@ -38,15 +38,40 @@ export class TrabalheConoscoComponent {
   }
 
 
+  public sendWhats(formulario: HTMLFormElement): void {
+    const form: FormData = new FormData(formulario);
+    form.forEach(values => console.log(values))
 
+    
 
-
-
-
-
-
-
-
-
-
+    navigator.share({
+      title: 'Formulário de Candidatura',
+      text: `
+      Nome: ${form.get('Nome')};\n
+      E-mail: ${form.get('E-mail')};\n
+      Telefone: ${form.get('Telefone')};\n
+      Data de Nascimento: ${form.get('Data Nascimento')};\n
+      Cargo: ${form.get('Cargo')};\n
+      Pretensão Salarial: ${form.get('Pretensão Salarial')};\n
+      Apresentação: ${form.get('Apresentacao')};\n
+      Currículo: ${form.get('Currículo')} `,
+      files: [form.get('Currículo') as File]
+    })
+      .then(() => console.log('Compartilhado com sucesso!'))
+      .catch((error) => console.error('Erro ao compartilhar:', error));
+  }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

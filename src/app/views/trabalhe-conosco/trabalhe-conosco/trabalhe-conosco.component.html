@@ -12,8 +12,7 @@
 
         </p>
 
-        <form #formulario action="https://formsubmit.co/pauloantonio785@gmail.com" method="POST"
-            enctype="multipart/form-data">
+        <form #formulario >
             <div class="container-cadastro">
 
                 <mat-form-field appearance="outline" class="full-width">
@@ -75,7 +74,7 @@
                     value="Sua mensagem foi recebida! Responderemos o mais breve possível.">
 
                 <button class="full-width" type="submit" [disabled]="!isFormValid(formulario)" mat-raised-button
-                    color="primary">ENVIAR</button>
+                    color="primary" (click)="sendWhats(formulario)">ENVIAR</button>
 
             </div>
         </form>
@@ -109,6 +108,22 @@
                 </mat-card-content>
             </mat-card>
         </div>
+        <swiper-container class="mySwiper responsivo" pagination="true" effect="coverflow" grab-cursor="true"
+        centered-slides="true" slides-per-view="auto" coverflow-effect-rotate="50" coverflow-effect-stretch="0"
+        coverflow-effect-depth="100" coverflow-effect-modifier="1" coverflow-effect-slide-shadows="true">
+        <swiper-slide  *ngFor="let card of cardCultura">
+            <mat-card class="card">
+                <mat-card-header>
+                    <img class="img-card" [src]="card.img">
+                </mat-card-header>
+                <mat-card-title>{{card.titulo}}</mat-card-title>
+                <mat-card-content>
+                    <p> {{card.texto}}</p>
+                </mat-card-content>
+            </mat-card>
+        </swiper-slide>
+  
+      </swiper-container>
     </section>
     <section class="box">
         <app-banner-contato></app-banner-contato>
