@@ -101,7 +101,7 @@ section:nth-child(3){
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    margin-bottom: 15px;
+    margin-bottom: 45px;
 
 }
 
@@ -221,13 +221,14 @@ swiper-slide .card {
 
     .banner-meio{
         padding: 0;
+        height: auto;
     }
     .banner-meio .container-meio{
         height: 100%;
         width: 100%;
         background-color: #424242a8;
         place-items: start start;
-        padding-left: 10px;
+        padding: 35px;
         text-align: left;
         margin: 0 auto;
     }
@@ -243,7 +244,7 @@ swiper-slide .card {
     }
     .banner-meio .texto-amarelo{
         font-size: 1.5rem;
-        padding-left: 10px;
+      
     }
     
     .container{
