@@ -1,7 +1,7 @@
 <app-nav-bar></app-nav-bar>
 <main>
     <div class="destaque-superior">
-        <h2 class="titulo">Trabalhe Conosco </h2>
+        <h2 class="titulo-1">Trabalhe Conosco </h2>
     </div>
     <section class="conteudo">
         <h3>Trabalhe Conosco e faça parte do nosso time</h3>
@@ -12,7 +12,8 @@
 
         </p>
 
-        <form #formulario >
+        <form #formulario action="https://formsubmit.co/operacional@grupoinovarserv.com.br" method="POST"
+            enctype="multipart/form-data">
             <div class="container-cadastro">
 
                 <mat-form-field appearance="outline" class="full-width">
@@ -74,7 +75,7 @@
                     value="Sua mensagem foi recebida! Responderemos o mais breve possível.">
 
                 <button class="full-width" type="submit" [disabled]="!isFormValid(formulario)" mat-raised-button
-                    color="primary" (click)="sendWhats(formulario)">ENVIAR</button>
+                    color="primary">ENVIAR</button>
 
             </div>
         </form>
@@ -85,7 +86,7 @@
 
     <div class="banner-meio">
         <div>
-            <h4 class="titulo">
+            <h4 class="titulo-2">
                 Junte-se ao Grupo Inovar
             </h4>
             <p class="texto-amarelo">
