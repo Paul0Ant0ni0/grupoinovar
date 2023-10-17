@@ -156,13 +156,15 @@ swiper-slide .card-beneficios {
     .conteudo{
         background-color: #00000082;
         width: 100%;
+        height: 100%;
         display: grid;
         place-items: center;
     }
 
 
     .banner-meio .titulo{
-        text-align: center;
+        text-align: left;
+        line-height: 1.2em;
     }
 }
 
@@ -176,12 +178,20 @@ swiper-slide .card-beneficios {
         display: block;
     }
     .responsivo .card-beneficios{
+        justify-content: center;
         height: 480px;
     }
 
     .responsivo .card-beneficios p{
         white-space: pre-wrap;
+        
     }
+
+    .responsivo .card-beneficios mat-card-title{
+        text-align: center;
+    }
+
+
     
 
 }

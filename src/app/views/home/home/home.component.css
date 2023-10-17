@@ -1,6 +1,6 @@
 .servicos-icones {
     height: 40%;
-    background-color: var(--cinza);
+    background-color: #01002F;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -10,7 +10,7 @@
 }
 
 .img-icone{
-    width: clamp(15px, 55%, 105px);
+    width: clamp(15px, 25%, 75px);
 }
 
 
@@ -23,7 +23,7 @@
     width: clamp(25px, 35%, 180px);
     height: 50%;
     margin: 10px;
-    color: var(--azul);
+    color: var(--amarelo);
     font-size: 100%;
     text-align: center;
 
@@ -61,7 +61,7 @@
     background-position-y: center;
     object-fit: cover;
     width: 100%;
-    height: auto;
+    height: clamp(550px, 75%, 1550px);
     padding: 15px;
     display: flex;
     flex-direction: row;
@@ -71,6 +71,7 @@
 
 .box-3 {
     background-image: url('../../../../assets/images/bg-home-inferior.jpg');
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -99,6 +100,7 @@
 
 .titulo-amarelo {
     background: var(--amarelo);
+    font-weight: 700;
     background-clip: text;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -109,7 +111,7 @@
 .titulo {
     font-size: 3rem;
     font-weight: 700;
-    text-transform: uppercase;
+    
 }
 
 .texto {

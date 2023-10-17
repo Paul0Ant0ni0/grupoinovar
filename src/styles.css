@@ -32,9 +32,13 @@ a:link:hover{
 }
 
 .whatsapp-button {
+    z-index:1000;
     position: fixed;
     bottom: 20px;
     right: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     animation: float 2s infinite;
 }
 
@@ -43,10 +47,10 @@ a:link:hover{
     height: 60px; /* Ajuste o tamanho do ícone conforme necessário */
     border: 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-left: 8px;
 }
 
-.whatsapp-button::before {
-    content: 'Olá! Eu sou a Ivone! Como posso te ajudar?';
+.whatsapp-button p {
     color: #08067b;
     background-color: white;
     padding: 15px;

@@ -32,3 +32,15 @@
     font-size: small;
    
 }
+
+
+@media (max-width: 464px) {
+
+    .box{
+        width: clamp(150px, 20%, 380px);
+        justify-content: flex-start;
+    }
+    .texto {
+        display: none;
+    }
+}

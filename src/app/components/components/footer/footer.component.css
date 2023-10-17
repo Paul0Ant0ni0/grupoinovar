@@ -47,6 +47,7 @@
 
   .footer-container {
     flex-direction: column;
+    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
   }
@@ -72,6 +73,11 @@
   .footer-info {
     padding: 0;
     order: 3;
+  }
+
+  
+  .footer-info p{
+    margin: 0;
   }
 
  
