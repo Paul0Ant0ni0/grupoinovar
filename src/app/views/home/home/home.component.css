@@ -9,7 +9,7 @@
 
 }
 
-.img-icone{
+.img-icone {
     width: clamp(15px, 25%, 75px);
 }
 
@@ -61,7 +61,7 @@
     background-position-y: center;
     object-fit: cover;
     width: 100%;
-    height: clamp(550px, 75%, 1550px);
+    height: clamp(250px, 75%, 1550px);
     padding: 15px;
     display: flex;
     flex-direction: row;
@@ -111,7 +111,7 @@
 .titulo {
     font-size: 3rem;
     font-weight: 700;
-    
+
 }
 
 .texto {
@@ -233,7 +233,7 @@
 
 
 swiper-container {
-    width:clamp(350px, 100%, 768px);
+    width: clamp(350px, 100%, 768px);
     padding-top: 50px;
     padding-bottom: 50px;
 }
@@ -248,7 +248,7 @@ swiper-slide {
 swiper-slide .card-servicos {
     display: block;
     width: 100%;
- 
+
 }
 
 
@@ -265,29 +265,31 @@ swiper-slide .card-servicos {
         background-attachment: fixed;
         flex-direction: column;
         align-items: center;
-        padding: 8px;
+        padding: 0;
     }
 
 
 
-    .box-2, .box-3 {
+    .box-2,
+    .box-3 {
         width: 100%;
         flex-direction: column;
         align-items: center;
         padding: 8px;
     }
 
-    .box-2{
+    .box-2, .box-3 {
         padding: 0;
     }
 
 
-    .double-width {
+    .box-1 .double-width,
+    .box-3 .double-width {
+
         background-color: rgba(0, 0, 0, 0.57);
         width: 100%;
-        padding: 15px;
-
-
+        height: 100%;
+        padding: 64px;
 
     }
 
@@ -301,13 +303,14 @@ swiper-slide .card-servicos {
         text-align: left;
     }
 
-    .texto-centro{
+    .texto-centro {
         width: 75%;
         font-size: 15px;
-      
+
     }
 
-    .texto-icone,  .card-servicos {
+    .texto-icone,
+    .card-servicos {
         display: none;
     }
 
@@ -315,16 +318,17 @@ swiper-slide .card-servicos {
         background-color: #01002F;
         display: block;
     }
-    .responsivo .card-servicos{
+
+    .responsivo .card-servicos {
         height: 480px;
     }
-    .responsivo .card-servicos img{
+
+    .responsivo .card-servicos img {
         width: 100%;
         height: 350px;
     }
 
-    .responsivo .card-servicos p{
+    .responsivo .card-servicos p {
         text-align: center;
     }
 }
-
