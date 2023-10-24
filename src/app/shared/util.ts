@@ -233,7 +233,7 @@ export const bannerContato: any[] = [
         img: '../../../../assets/images/icons/banner-contato/contact us.png',
         titulo: 'FALE\nCONOSCO',
         texto: 'Envie uma mensagem ou sugestões para o Grupo INOVAR',
-        link: '/contato'
+        link: '../contato'
     },
     {
         img: '../../../../assets/images/icons/banner-contato/whatsapp.png',
@@ -245,7 +245,7 @@ export const bannerContato: any[] = [
         img: '../../../../assets/images/icons/banner-contato/budget.png',
         titulo: 'FAÇA\nUMA COTAÇÃO',
         texto: 'Entre em contato com nossos consultores para mais informações',
-        link: '/orcamentos'
+        link: '../orcamentos'
     }
 ]
 
