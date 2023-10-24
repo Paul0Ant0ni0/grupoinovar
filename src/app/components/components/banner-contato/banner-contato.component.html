@@ -1,10 +1,15 @@
 <div class="container">
-    <div class="box" *ngFor="let itens of itensBenner">
-        <img [src]="itens.img" alt="icones" width="50">
+    <div class="box" *ngFor="let item of itensBenner">
+        <img [src]="item.img" alt="icones" width="50">
         <section class="conteudo">
-            <a [href]="itens.link" class="titulo">{{itens.titulo}}</a>
-            <p class="texto">{{itens.texto}}</p>
+            <ng-container *ngIf="item.link !== '/contato' && item.link !== '/orcamentos'; else linkTemplate">
+                <a [href]="item.link" class="titulo">{{item.titulo}}</a>
+
+            </ng-container>
+            <ng-template #linkTemplate>
+                <a [routerLink]="item.link" class="titulo">{{item.titulo}}</a>
+            </ng-template>
+            <p class="texto">{{item.texto}}</p>
         </section>
     </div>
-    
 </div>
