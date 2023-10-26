@@ -3,7 +3,7 @@
         <img [src]="item.img" alt="icones" width="50">
         <section class="conteudo">
             <ng-container *ngIf="item.link !== '/contato' && item.link !== '/orcamentos'; else linkTemplate">
-                <a [href]="item.link" class="titulo">{{item.titulo}}</a>
+                <a [href]="item.link" class="titulo" target="_blank">{{item.titulo}}</a>
 
             </ng-container>
             <ng-template #linkTemplate>

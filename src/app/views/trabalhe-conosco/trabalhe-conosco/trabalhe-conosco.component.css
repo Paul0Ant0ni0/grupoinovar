@@ -215,6 +215,11 @@ swiper-slide .card {
 }
 
 @media  (max-width: 768px) {
+
+    .destaque-superior{
+        height: 250px;
+    }
+
     .double-width  mat-form-field{
         width: 100%;
     }

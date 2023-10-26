@@ -332,3 +332,20 @@ swiper-slide .card-servicos {
         text-align: center;
     }
 }
+
+
+@media (min-width: 1568px) {
+    .box-1{
+        height: 45rem;
+        align-items: flex-start;
+    }
+
+    .box-1 .double-width:first-child{
+     
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        height: 100%;
+    }
+}

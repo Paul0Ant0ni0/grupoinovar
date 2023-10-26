@@ -90,8 +90,15 @@
 
 
 @media (max-width: 766px) {
+
+
+    .destaque-superior{
+        height: 250px;
+    }
+
     .destaque-inferior {
         height: clamp(620px, 55%, 960px);
+        padding: 45px;
 
     }
 

@@ -34,22 +34,24 @@ export const cardServicos: any[] = [
     {
         img: "../../../../assets/images/servicos/1 - JARDINAGEM.jpg",
         titulo: "Jardinagem",
-        texto: "Oferecemos um paisagismo primoroso que valoriza o ambiente e promove o bem-estar de todos que o frequentam.\nSeu espaço, nossa expertise."
+        texto: "Oferecemos um paisagismo primoroso que valoriza o ambiente e promove o bem- estar de todos que o frequentam seu espaço.\n\nNosso serviço de Jardinagem é feito de forma especializada, fornecendo os materiais selecionados que asseguram a qualidade de nosso serviço.\n\nA vantagem de você optar por um serviço terceirizado de jardinagem, é que ele será executados em dias e horários pré determinados pelos nossos clientes.\n\nRespeitando as condições pré estabelecidas sempre."
     },
     {
         img: "../../../../assets/images/servicos/2 - MANUTENÇÃO.jpg",
         titulo: "Auxiliar de manutenção",
-        texto: "Planejamento e execução de serviços de manutenção preventiva e corretiva em máquinas, equipamentos e instalações.\nGarantindo o funcionamento eficiente que seu negócio merece."
+        texto: "Nossos funcionários são altamente qualificados e responsáveis por verificar as funcionalidades, manutenção, reparo ou substituição de dispositivos, equipamentos, maquinário, infraestrutura predial e serviços de apoio necessários em instalações industriais, comerciais e residenciais.\n\nGarantindo o funcionamento eficiente que seu negócio merece."
+
     },
     {
         img: "../../../../assets/images/servicos/3 - MANOBRISTA.jpg",
         titulo: "Manobrista",
-        texto: "Destaque-se da concorrência com nosso serviço de estacionamento com manobrista.\nA excelência que você merece para seu negócio."
+        texto: "Destaque-se da concorrência com nosso serviço de estacionamento com manobrista.\n\nNossos colaboradores são altamente profissionais, treinados e experientes.\n\nA excelência que você merece para seu negócio."
+
     },
     {
         img: "../../../../assets/images/servicos/4 - RECEPCIONISTA.jpg",
         titulo: "Recepcionista",
-        texto: "O Recepcionista é peça-chave na acolhida e organização de visitantes em nossas instalações no Grupo Inovar."
+        texto: "O Recepcionista é peça-chave na acolhida e organização de visitantes em nossas instalações.\n\nO GRUPO INOVAR dispõe de profissionais capacitamos para que haja uma recepção gentil e segura, além de uma triagem eficiente.\n\nVale lembrar que a primeira impressão é a que fica. E nós queremos o melhor para você sempre.\n\nEntre em contato conosco e saiba mais.\n\n"
     },
     {
         img: "../../../../assets/images/servicos/5 - CONTROLADOR DE ACESSO.jpg",
@@ -64,7 +66,7 @@ export const cardServicos: any[] = [
     {
         img: "../../../../assets/images/servicos/7 - PORTARIA 24 HORAS.jpg",
         titulo: "Portaria 24 horas",
-        texto: "Garantimos segurança ininterrupta e controle de acesso para proteger sua propriedade e assegurar a tranquilidade dos residentes e visitantes."
+        texto: "Oferecer um serviço de portaria terceirizada, temos como finalidade administrar a entrada e saída de pessoas e objetos no estabelecimento, seja ele comercial, residencial, industrial entre outros. \n\nNossos colaboradores são altamente qualificados e treinados para atender ao cliente, trazendo sempre qualidade e gerando confiança nos serviços prestados. \n\nNós da GRUPO INOVAR contamos com os melhores profissionais levando para sua empresa o que há de melhor. \n\nSolicite seu orçamento, será um prazer atendê-lo."
     },
     {
         img: "../../../../assets/images/servicos/8 - ZELADORIA.webp",
@@ -81,7 +83,7 @@ export const cardServicos: any[] = [
     {
         img: "../../../../assets/images/servicos/10 - AUXILIAR DE LIMPEZA.jpg",
         titulo: "Auxiliar de Limpeza",
-        texto: "Profissionais dedicados a manter cada detalhe do seu espaço limpo e organizado, criando um ambiente saudável e convidativo para todos."
+        texto: "Nossa equipe especializada garante que cada canto do seu espaço esteja impecável, proporcionando um ambiente higienizado e agradável para todos. \n\nUm ambiente limpo valoriza seu negócio !Sabemos que hoje em dia manter uma boa limpeza e desinfecção constantes se tornaram fatores importantes para o funcionamento da maioria das empresas. \n\nSendo assim, nossa empresa zela pelos cuidados de uma limpeza eficiente e qualificada."
     }
 ];
 
@@ -237,9 +239,10 @@ export const bannerContato: any[] = [
     },
     {
         img: '../../../../assets/images/icons/banner-contato/whatsapp.png',
-        titulo: 'WHATSAPP\n(11) 91779-1552',
+        titulo: 'WHATSAPP\n(11) 95784-8787',
         texto: 'Fale com o Grupo INOVAR pelo aplicativo WhatsApp',
-        link: 'https://api.whatsapp.com/send?phone=5511917791552'
+        link: 'https://wa.me/5511957848787?text=Ol%C3%A1%2C+gostaria+de+solicitar+mais+informa%C3%A7%C3%B5es+sobre+os+servi%C3%A7os+ofertados+pelo+GRUPO+INOVAR.+'
+
     },
     {
         img: '../../../../assets/images/icons/banner-contato/budget.png',
@@ -261,7 +264,7 @@ export const opcoesServicos: string[] = [
     'Auxiliar de manutenção',
     'Jardinagem',
     'Manobrista'
-  ];
+];
 
 
 

@@ -175,13 +175,21 @@ h2 {
     transition: transform 0.3s ease, opacity 0.3s ease;
     border: 1px solid rgba(167, 167, 167, 0.127);
     text-align: justify;
-
-
+    overflow: hidden; /* oculta qualquer conteúdo que ultrapasse a largura do contêiner */
+    text-overflow: ellipsis; /* exibe três pontinhos (...) para indicar que há mais conteúdo oculto */
 }
 
 .card-servicos p{
     font-size: 14px;
     white-space: pre-wrap;
+    
+}
+
+.card-servicos:hover{
+    height: auto;
+    scale: 1.1;
+    transition: 3s;
+    z-index: 1000;
 }
 
 .responsivo {
@@ -225,6 +233,11 @@ swiper-slide .card-servicos {
 
 
 @media (max-width: 768px) {
+
+    .destaque-superior{
+        height: 250px;
+    }
+
     .card-servicos {
         display: none;
     }

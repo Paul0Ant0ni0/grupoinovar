@@ -169,6 +169,11 @@ swiper-slide .card-beneficios {
 }
 
 @media (max-width: 768px){
+
+    .destaque-superior{
+        height: 250px;
+    }
+
     .container-beneficios {
         display: none;
     }

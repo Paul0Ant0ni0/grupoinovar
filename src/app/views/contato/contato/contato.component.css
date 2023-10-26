@@ -216,6 +216,11 @@ span{
 }
 
 @media  (max-width: 768px) {
+
+    .destaque-superior{
+        height: 250px;
+    }
+
     .container-header{
         background-size: 350%;
        background-position: -850px;
