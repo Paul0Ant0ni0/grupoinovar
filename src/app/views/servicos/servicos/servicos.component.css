@@ -293,9 +293,27 @@ swiper-slide .card-servicos {
         padding: 45px;
     }
 
+  
+
     .card-servicos:hover mat-card-header {
-        display: none;
+        animation: slide-up 1s ease forwards;
     }
-    
+
+    @keyframes slide-up {
+        0% {
+          transform: translateY(0);
+        }
+        100% {
+          transform: translateY(-100%);
+          display: none;
+        }
+      }
+      
+      .slide-up {
+        animation: slide-up 1s ease forwards;
+      }
+      
+      
+   
 
 }
