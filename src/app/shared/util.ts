@@ -227,9 +227,9 @@ export const faqPerguntas: any[] = [
 export const bannerContato: any[] = [
     {
         img: '../../../../assets/images/icons/banner-contato/support.png',
-        titulo: 'SUPORTE\n(11) 94031-5672',
+        titulo: 'SUPORTE\n(11) 9177-91552',
         texto: 'Entre em contato com a nossa Central de Atendimento',
-        link: 'tel:+5511940315672'
+        link: 'tel:+5511917791552'
     },
     {
         img: '../../../../assets/images/icons/banner-contato/contact us.png',

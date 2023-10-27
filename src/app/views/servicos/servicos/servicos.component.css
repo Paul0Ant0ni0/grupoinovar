@@ -185,12 +185,15 @@ h2 {
     
 }
 
-.card-servicos:hover{
+.card-servicos:hover {
     height: auto;
-    scale: 1.1;
+    transform: scale(1.1);
     transition: 3s;
     z-index: 1000;
 }
+
+
+
 
 .responsivo {
     display: none;
@@ -289,5 +292,10 @@ swiper-slide .card-servicos {
         background-color: #00000082;
         padding: 45px;
     }
+
+    .card-servicos:hover mat-card-header {
+        display: none;
+    }
+    
 
 }
